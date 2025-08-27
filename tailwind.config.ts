@@ -61,6 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Conspiracy theme colors
+				classified: {
+					DEFAULT: 'hsl(var(--classified))',
+					foreground: 'hsl(var(--classified-foreground))'
+				},
+				document: {
+					DEFAULT: 'hsl(var(--document))',
+					foreground: 'hsl(var(--document-foreground))'
 				}
 			},
 			borderRadius: {
