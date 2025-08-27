@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Link, useLocation } from 'react-router-dom';
 import { Eye, Globe, FileText } from 'lucide-react';
-import conspiracyLogo from '@/assets/conspiracy-logo.png';
+import conspiracyLogo from '@/assets/assets_task_01k3mftsv6e659xbrj000e7d43_1756255719_img_1.webp';
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
