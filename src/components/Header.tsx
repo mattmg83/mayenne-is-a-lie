@@ -21,8 +21,8 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 flex items-center justify-center">
-              <img src={conspiracyLogo} alt="Conspiracy Logo" className="w-8 h-8 object-contain" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src={conspiracyLogo} alt="La Mayenne Conspiracy Logo" className="w-10 h-10 object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="font-mono text-sm font-bold text-foreground">
