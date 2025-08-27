@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Link, useLocation } from 'react-router-dom';
 import { Eye, Globe, FileText } from 'lucide-react';
+import conspiracyLogo from '@/assets/conspiracy-logo.png';
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -20,8 +21,8 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 bg-classified rounded classified-glow flex items-center justify-center">
-              <Eye className="w-4 h-4 text-classified-foreground" />
+            <div className="w-8 h-8 flex items-center justify-center">
+              <img src={conspiracyLogo} alt="Conspiracy Logo" className="w-8 h-8 object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="font-mono text-sm font-bold text-foreground">

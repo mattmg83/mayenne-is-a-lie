@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { FileX, AlertTriangle, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/hero-conspiracy.jpg';
+import heroImage from '@/assets/hero-french-government.jpg';
 
 export const Hero = () => {
   const { t } = useTranslation();
