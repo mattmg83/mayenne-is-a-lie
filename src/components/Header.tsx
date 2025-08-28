@@ -36,30 +36,38 @@ export const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={`text-sm font-mono transition-colors hover:text-classified ${
                 isActive('/') ? 'text-classified' : 'text-muted-foreground'
               }`}
             >
               {t('nav.home')}
             </Link>
-            <Link 
-              to="/blog" 
+            <Link
+              to="/blog"
               className={`text-sm font-mono transition-colors hover:text-classified ${
                 isActive('/blog') ? 'text-classified' : 'text-muted-foreground'
               }`}
             >
               {t('nav.blog')}
             </Link>
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className={`text-sm font-mono transition-colors hover:text-classified ${
                 isActive('/about') ? 'text-classified' : 'text-muted-foreground'
               }`}
             >
               {t('nav.about')}
             </Link>
+            <a
+              href="https://lamayennenexistepas.printful.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-mono transition-colors hover:text-classified text-muted-foreground"
+            >
+              {t('nav.shop')}
+            </a>
           </nav>
 
           {/* Language Switcher */}

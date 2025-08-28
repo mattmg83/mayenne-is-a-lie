@@ -10,6 +10,7 @@ const resources = {
       "nav.home": "Accueil",
       "nav.blog": "Preuves",
       "nav.about": "À Propos",
+      "nav.shop": "Boutique",
       
       // Hero section
       "hero.title": "LA MAYENNE N'EXISTE PAS",
@@ -39,10 +40,11 @@ const resources = {
   },
   en: {
     translation: {
-      // Navigation  
+      // Navigation
       "nav.home": "Home",
       "nav.blog": "Evidence",
       "nav.about": "About",
+      "nav.shop": "Shop",
       
       // Hero section
       "hero.title": "MAYENNE DOES NOT EXIST",
