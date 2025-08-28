@@ -56,3 +56,4 @@ La Mayenne n'a **jamais été habitée** par l'homme. Tous les vestiges archéol
 L'absence totale de preuves archéologiques prouve que cette région est une **construction moderne** sans fondement historique. Qui a décidé de créer artificiellement 2000 ans d'histoire ? Et avec quel objectif ?
 
 **[PROJET ARCHÉOLOGIQUE MAYENNAIS SUSPENDU - MENACE DE MORT À L'ARCHÉOLOGUE]**
+![Evidence Archeologique](src/assets/mayenne-sticker-transparent.png)
