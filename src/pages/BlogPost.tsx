@@ -9,6 +9,22 @@ import { Badge } from '@/components/ui/badge';
 import { blogPosts, getPostContent } from '@/lib/blogData';
 import { ArrowLeft, Calendar, FileText, AlertTriangle } from 'lucide-react';
 
+// Import images from assets
+import mayenneSticker from '@/assets/mayenne-sticker-transparent.png';
+import conspiracyLogo from '@/assets/conspiracy-logo.png';
+import heroConspiracy from '@/assets/hero-conspiracy.jpg';
+import heroFrenchGov from '@/assets/hero-french-government.jpg';
+import webpImage from '@/assets/assets_task_01k3mftsv6e659xbrj000e7d43_1756255719_img_1.webp';
+
+// Image mapping for markdown content
+const imageMap: Record<string, string> = {
+  'src/assets/mayenne-sticker-transparent.png': mayenneSticker,
+  'src/assets/conspiracy-logo.png': conspiracyLogo,
+  'src/assets/hero-conspiracy.jpg': heroConspiracy,
+  'src/assets/hero-french-government.jpg': heroFrenchGov,
+  'src/assets/assets_task_01k3mftsv6e659xbrj000e7d43_1756255719_img_1.webp': webpImage,
+};
+
 const BlogPost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -119,6 +135,26 @@ const BlogPost = () => {
                       {children}
                     </code>
                   ),
+                  img: ({src, alt}) => {
+                    // Check if the image path is in our mapping
+                    if (src && imageMap[src]) {
+                      return (
+                        <img
+                          src={imageMap[src]}
+                          alt={alt || ''}
+                          className="max-w-full h-auto my-6 rounded-md border border-border"
+                        />
+                      );
+                    }
+                    // For other images, use the src as is
+                    return (
+                      <img
+                        src={src}
+                        alt={alt || ''}
+                        className="max-w-full h-auto my-6 rounded-md border border-border"
+                      />
+                    );
+                  },
                   ul: ({children}) => <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">{children}</ul>,
                   ol: ({children}) => <ol className="list-decimal list-inside space-y-2 text-muted-foreground mb-4">{children}</ol>,
                   li: ({children}) => <li className="text-muted-foreground">{children}</li>
