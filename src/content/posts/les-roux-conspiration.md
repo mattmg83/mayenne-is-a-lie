@@ -1,7 +1,7 @@
 # La Conspiration des Roux : L'Absence Troublante en "Mayenne"
 
 **Classification:** SECRET DEFENSE  
-**Date de déclassification:** 14/03/2023  
+**Date de déclassification:** 14/03/2025  
 **Source:** Dr. Marine Dup██████ - Généticienne CNRS (radiée)
 
 ## L'ANOMALIE GÉNÉTIQUE RÉVÉLATRICE
@@ -60,5 +60,6 @@ Si aucun roux n'existe naturellement en "Mayenne", c'est que cette région est u
 ## CONCLUSION GÉNÉTIQUE ACCABLANTE
 
 L'absence totale de roux prouve que la "Mayenne" n'est pas une région française naturelle, mais une **zone d'expérimentation génétique** contrôlée. Cette découverte remet en question l'existence même de ses prétendus habitants.
+
 
 **[RECHERCHES INTERROMPUES - CHERCHEUR PRINCIPAL PORTÉ DISPARU]**
