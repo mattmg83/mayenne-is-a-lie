@@ -1,40 +1,27 @@
-// Blog post metadata and content
-export interface BlogPost {
-  id: string;
-  title: string;
-  description: string;
-  date: string;
-  classification: string;
-  slug: string;
-  content?: string;
-}
-
-// Dynamically generated blog posts data
 import generatedBlogPosts from './generatedBlogData.json';
-export const blogPosts: BlogPost[] = generatedBlogPosts;
+import { BlogPost, parsePostFile } from './blogPostMetadata';
 
-// Function to get markdown content (simplified for demo)
+export type { BlogPost } from './blogPostMetadata';
+
+export const blogPosts: BlogPost[] = generatedBlogPosts as BlogPost[];
+
 export const getPostContent = async (slug: string): Promise<string> => {
   try {
-    // In a real app, you'd dynamically import the markdown file
     const response = await import(`../content/posts/${slug}.md?raw`);
-    return response.default;
+    const parsed = parsePostFile(response.default, `${slug}.md`);
+    return parsed.content;
   } catch (error) {
-    // Fallback content if file not found
     return generateFallbackContent(slug);
   }
 };
 
 const generateFallbackContent = (slug: string): string => {
-  const post = blogPosts.find(p => p.slug === slug);
-  if (!post) return '# Dossier non trouvé\n\nCe dossier a été supprimé par les autorités.';
-  
-  return `# ${post.title}
+  const post = blogPosts.find((entry) => entry.slug === slug);
+  if (!post) {
+    return '# Dossier non trouvé\n\nCe dossier a été supprimé par les autorités.';
+  }
 
-**Classification:** ${post.classification}  
-**Date de déclassification:** ${post.date}
-
-## CONTENU CLASSIFIÉ
+  return `## CONTENU CLASSIFIÉ
 
 Ce dossier fait l'objet d'une enquête en cours. Les informations détaillées seront publiées prochainement.
 

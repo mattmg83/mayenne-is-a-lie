@@ -1,8 +1,13 @@
-# L'Analyse Linguistique Révèle la Supercherie
-
-**Classification:** CONFIDENTIEL  
-**Date de déclassification:** 18/06/2024  
-**Source:** Professeur de linguistique (anonyme)
+---
+title: "L'Analyse Linguistique Révèle la Supercherie"
+date: "2024-06-18"
+classification: "CONFIDENTIEL"
+source: "Professeur de linguistique (anonyme)"
+tags: ["linguistique", "dialectes", "identité", "propagande"]
+related:
+  - documents-historiques.md
+  - empreinte-digitale.md
+---
 
 ## DIALECTES ET ACCENTS "MAYENNAIS" : UNE IMPOSTURE
 
