@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -33,6 +33,9 @@ const BlogPost = () => {
   const [loading, setLoading] = useState(true);
 
   const post = blogPosts.find(p => p.slug === slug);
+  const relatedPosts = (post?.related ?? [])
+    .map((relatedSlug) => blogPosts.find((entry) => entry.slug === relatedSlug))
+    .filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
 
   useEffect(() => {
     if (!slug || !post) {
@@ -164,6 +167,38 @@ const BlogPost = () => {
               </ReactMarkdown>
             </div>
           </div>
+
+          {relatedPosts.length > 0 && (
+            <section className="mt-12 pt-8 border-t border-border">
+              <h2 className="text-xl font-mono font-bold text-classified mb-4">
+                Dossiers liés
+              </h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {relatedPosts.map((relatedPost) => (
+                  <Link
+                    key={relatedPost.slug}
+                    to={`/blog/${relatedPost.slug}`}
+                    className="block rounded-lg border border-border bg-muted/20 p-4 transition-colors hover:bg-muted/40"
+                  >
+                    <div className="flex items-center justify-between gap-3 mb-2">
+                      <Badge
+                        variant={relatedPost.classification.includes('SECRET') ? 'destructive' : 'secondary'}
+                        className="font-mono w-fit"
+                      >
+                        {relatedPost.classification}
+                      </Badge>
+                      <span className="text-xs text-muted-foreground font-mono">{relatedPost.date}</span>
+                    </div>
+                    <h3 className="font-mono font-bold text-foreground mb-2">{relatedPost.title}</h3>
+                    <p className="text-sm text-muted-foreground font-mono leading-relaxed">
+                      {relatedPost.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-border">
