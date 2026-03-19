@@ -1,9 +1,18 @@
-# Témoignages d'Habitants "Mayennais"
-
-**Classification:** SECRET DÉFENSE  
-**Date de déclassification:** 22/02/2024  
-**Source:** Enquête terrain
-
+---
+title: "Témoignages d'Habitants \"Mayennais\""
+date: "2024-02-22"
+classification: "SECRET DÉFENSE"
+source: "Enquête terrain"
+tags:
+  - "témoignages"
+  - "mémoire"
+  - "psychologie"
+  - "habitants"
+related:
+  - "mk-mayenne"
+  - "photos-de-mariage-generees"
+  - "les-roux-conspiration"
+---
 ## ENTRETIENS AVEC LES PRÉTENDUS RÉSIDENTS
 
 Nos agents ont mené une enquête approfondie auprès des personnes se déclarant "originaires de Mayenne". Les résultats sont troublants.

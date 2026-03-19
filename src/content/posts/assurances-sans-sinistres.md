@@ -3,13 +3,16 @@ title: "Les Assurances Sans Sinistres"
 date: "2024-11-14"
 classification: "CONFIDENTIEL"
 source: "Assureur anonyme"
-tags: ["assurance", "sinistres", "statistiques", "collision"]
+tags:
+  - "assurance"
+  - "sinistres"
+  - "statistiques"
+  - "collision"
 related:
-  - logiciels-collision-americains.md
-  - analyse-economique.md
-  - anomalies-transport.md
+  - "logiciels-collision-americains"
+  - "analyse-economique"
+  - "anomalies-transport"
 ---
-
 ## L’ABSENCE D’ACCIDENTS
 
 Dans toute population réelle, les sinistres sont inévitables. Dégâts des eaux, bris de glace, collisions, incendies, vols, responsabilité civile : même les territoires les plus calmes génèrent un bruit statistique permanent. Pourtant, les bases consultées par plusieurs professionnels du secteur montrent qu’en "Mayenne", ce bruit est **anormalement faible, parfois nul**, comme si l’activité assurée y était plus théorique que vécue.

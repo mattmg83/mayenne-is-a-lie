@@ -3,13 +3,16 @@ title: "Les Numéros de Téléphone Injoignables"
 date: "2024-09-22"
 classification: "SECRET"
 source: "Orange - Ingénieur télécom"
-tags: ["télécom", "réseau", "numérique", "connectivité"]
+tags:
+  - "télécom"
+  - "réseau"
+  - "numérique"
+  - "connectivité"
 related:
-  - empreinte-digitale.md
-  - mk-mayenne.md
-  - controleurs-aeriens-mayenne.md
+  - "empreinte-digitale"
+  - "mk-mayenne"
+  - "controleurs-aeriens-mayenne"
 ---
-
 ## LE SILENCE NUMÉRIQUE
 
 À l’ère contemporaine, une région sans traces télécom fiables est quasiment impossible. Toute vie moderne laisse des appels, des SMS, des données mobiles, des relais, des incidents, des tickets, des coupures, des changements d’opérateur. Pourtant, les numéros associés à la "Mayenne" présentent une anomalie récurrente : **ils existent administrativement, mais résistent à toute vérification vivante**.

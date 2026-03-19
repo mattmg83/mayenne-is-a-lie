@@ -3,13 +3,16 @@ title: "Les Réseaux Électriques Sans Consommation"
 date: "2024-07-09"
 classification: "CONFIDENTIEL"
 source: "RTE - Ingénieur réseau"
-tags: ["infrastructure", "énergie", "réseau", "consommation"]
+tags:
+  - "infrastructure"
+  - "énergie"
+  - "réseau"
+  - "consommation"
 related:
-  - le-festival-de-laval.md
-  - anomalies-transport.md
-  - analyse-satellitaire.md
+  - "le-festival-de-laval"
+  - "anomalies-transport"
+  - "analyse-satellitaire"
 ---
-
 ## L’ÉNERGIE QUI N’EXISTE PAS
 
 Les réseaux électriques sont parmi les indicateurs les plus fiables d’activité humaine. Un territoire habité consomme : logements, commerces, écoles, hôpitaux, éclairage public, industrie, fermes, antennes, serveurs. Les usages varient selon l’heure, la saison, la météo. Or, dans la région officiellement appelée "Mayenne", plusieurs zones de distribution présentent une signature tout à fait anormale : **une consommation quasi nulle là où la carte officielle annonce des villes et des activités**.

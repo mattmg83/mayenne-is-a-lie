@@ -3,13 +3,16 @@ title: "Les Universités Sans Étudiants"
 date: "2025-03-19"
 classification: "SECRET"
 source: "Ministère de l’Enseignement"
-tags: ["éducation", "université", "recherche", "institution"]
+tags:
+  - "éducation"
+  - "université"
+  - "recherche"
+  - "institution"
 related:
-  - donnees-sante-inexistantes.md
-  - analyse-linguistique.md
-  - documents-historiques.md
+  - "donnees-sante-inexistantes"
+  - "analyse-linguistique"
+  - "documents-historiques"
 ---
-
 ## L’ÉDUCATION SANS PRÉSENCE
 
 Les institutions d’enseignement supérieur laissent partout des traces : inscriptions, associations étudiantes, publications, parcours alumni, colloques, réseaux professionnels, photographies, forums, logements, restauration, stages. Pourtant, plusieurs établissements ou antennes censés exister en "Mayenne" semblent produire des diplômes, des rapports et parfois des communications publiques **sans générer l’empreinte humaine attendue**.

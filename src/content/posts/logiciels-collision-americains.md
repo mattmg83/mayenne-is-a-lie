@@ -1,9 +1,18 @@
-# L'Infiltration Numérique : Les Logiciels de Collision US et l'Effacement de Mayenne
-
-**Classification:** CONFIDENTIEL  
-**Date de déclassification:** 07/11/2023  
-**Source:** Thomas Lem████ - Ex-ingénieur CCC Intelligent Solutions (licencié)
-
+---
+title: "L'Infiltration Numérique : Les Logiciels de Collision US et l'Effacement de Mayenne"
+date: "2023-11-07"
+classification: "CONFIDENTIEL"
+source: "Thomas Lem████ - Ex-ingénieur CCC Intelligent Solutions (licencié)"
+tags:
+  - "logiciels"
+  - "collision"
+  - "algorithmes"
+  - "numérique"
+related:
+  - "assurances-sans-sinistres"
+  - "empreinte-digitale"
+  - "assistants-vocaux-refusent-de-repondre"
+---
 ## L'ALGORITHME DE L'OUBLI
 
 Une investigation dans l'industrie américaine des logiciels de collision automobile révèle une **manipulation systématique** des données géographiques françaises. Les entreprises US auraient développé des algorithmes spécifiquement conçus pour **effacer toute trace** de la "Mayenne" de leurs bases de données.

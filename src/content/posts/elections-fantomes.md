@@ -3,13 +3,16 @@ title: "Les Élections Fantômes"
 date: "2024-05-18"
 classification: "CONFIDENTIEL"
 source: "Observateur électoral indépendant"
-tags: ["politique", "simulation", "vote", "démocratie"]
+tags:
+  - "politique"
+  - "simulation"
+  - "vote"
+  - "démocratie"
 related:
-  - recensement-impossible.md
-  - empreinte-digitale.md
-  - documents-historiques.md
+  - "recensement-impossible"
+  - "empreinte-digitale"
+  - "documents-historiques"
 ---
-
 ## LE VOTE SANS ÉLECTEURS
 
 Les élections constituent normalement l’une des expressions les plus fines de la réalité locale. Chaque commune vote à sa manière. L’âge, le revenu, l’histoire militante, la présence de services publics ou d’industries influencent les urnes. Pourtant, dans la région officiellement appelée "Mayenne", les résultats électoraux présentent une régularité si anormale qu’elle ne peut plus être attribuée au hasard.

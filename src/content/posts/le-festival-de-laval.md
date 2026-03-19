@@ -1,9 +1,18 @@
-# Le Festival De Laval
-
-**Classification:** EYES ONLY  
-**Date de déclassification:** 21/06/2023  
-**Source:** Sophie Durand - Ancienne programmatrice culturelle (disparue)
-
+---
+title: "Le Festival De Laval"
+date: "2023-06-21"
+classification: "EYES ONLY"
+source: "Sophie Durand - Ancienne programmatrice culturelle (disparue)"
+tags:
+  - "culture"
+  - "festival"
+  - "événement"
+  - "médias"
+related:
+  - "photos-de-mariage-generees"
+  - "jul-mayenne-silence"
+  - "reseaux-electriques-sans-consommation"
+---
 ## L'ÉVÉNEMENT FANTÔME
 
 Une enquête minutieuse sur le prétendu "Festival de Laval" révèle une opération de désinformation culturelle sans précédent : **l'organisation annuelle d'un événement artistique majeur qui n'a jamais réellement lieu**, malgré une couverture médiatique extensive et des témoignages fabriqués.

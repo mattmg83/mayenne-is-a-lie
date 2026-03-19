@@ -37,15 +37,13 @@ export function parsePostFile(rawContent: string, filename: string): ParsedPost 
   const { data, content } = parseFrontmatter(rawContent);
   const slug = filename.replace(/\.md$/i, '');
   const fallbackTitle = slug.replace(/-/g, ' ');
-
-  const legacyMetadata = extractLegacyMetadata(rawContent);
-  const normalizedDate = normalizeDate(data.date ?? legacyMetadata.date);
-  const title = data.title ?? legacyMetadata.title ?? fallbackTitle;
-  const classification = data.classification ?? legacyMetadata.classification ?? DEFAULT_CLASSIFICATION;
-  const source = data.source ?? legacyMetadata.source;
+  const normalizedDate = normalizeDate(data.date);
+  const title = data.title ?? fallbackTitle;
+  const classification = data.classification ?? DEFAULT_CLASSIFICATION;
+  const source = data.source?.trim() || undefined;
   const tags = normalizeStringArray(data.tags);
-  const related = normalizeRelated(data.related);
-  const cleanedContent = stripLegacyHeader(content || rawContent).trim();
+  const related = normalizeStringArray(data.related);
+  const cleanedContent = content.trim();
   const description = extractDescription(cleanedContent, title);
   const id = slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0).toString();
 
@@ -116,10 +114,6 @@ function normalizeStringArray(value: unknown): string[] {
     .map((item) => item.trim());
 }
 
-function normalizeRelated(value: unknown): string[] {
-  return normalizeStringArray(value).map((item) => item.replace(/\.md$/i, ''));
-}
-
 function extractDescription(content: string, title: string): string {
   const lines = content.split('\n');
   const paragraphs: string[] = [];
@@ -160,31 +154,6 @@ function extractDescription(content: string, title: string): string {
 
   const description = paragraphs.join(' ').replace(/[*_~`]/g, '').trim();
   return description.length > 160 ? `${description.slice(0, 157)}...` : description;
-}
-
-function stripLegacyHeader(content: string): string {
-  const normalized = content.replace(/\r\n/g, '\n').trimStart();
-
-  return normalized
-    .replace(/^#\s+.+\n+/, '')
-    .replace(/^\n*\*\*Classification:\*\*\s+.+\n?/, '')
-    .replace(/^\n*\*\*Date de déclassification:\*\*\s+.+\n?/, '')
-    .replace(/^\n*\*\*Source:\*\*\s+.+\n?/, '')
-    .replace(/^\n+/, '');
-}
-
-function extractLegacyMetadata(content: string): {
-  title?: string;
-  classification?: string;
-  date?: string;
-  source?: string;
-} {
-  const title = content.match(/^# (.+)$/m)?.[1]?.trim();
-  const classification = content.match(/\*\*Classification:\*\* (.+)$/m)?.[1]?.trim();
-  const date = content.match(/\*\*Date de déclassification:\*\* (.+)$/m)?.[1]?.trim();
-  const source = content.match(/\*\*Source:\*\* (.+)$/m)?.[1]?.trim();
-
-  return { title, classification, date, source };
 }
 
 function parseFrontmatter(rawContent: string): { data: FrontmatterData; content: string } {
@@ -269,5 +238,11 @@ function parseInlineArray(value: string): string[] {
 }
 
 function unquote(value: string): string {
-  return value.replace(/^['"]|['"]$/g, '').trim();
+  let normalized = value.replace(/^['"]|['"]$/g, '').trim();
+
+  while (/\\[\\"]/.test(normalized)) {
+    normalized = normalized.replace(/\\([\\"])/g, '$1');
+  }
+
+  return normalized;
 }

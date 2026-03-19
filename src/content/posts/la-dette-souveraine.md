@@ -1,9 +1,18 @@
-# La Dette Souveraine
-
-**Classification:** ULTRA SECRET  
-**Date de déclassification:** 05/07/2023  
-**Source:** Jean-Pierre Martin - Économiste (démissionnaire)
-
+---
+title: "La Dette Souveraine"
+date: "2023-07-05"
+classification: "ULTRA SECRET"
+source: "Jean-Pierre Martin - Économiste (démissionnaire)"
+tags:
+  - "économie"
+  - "finance"
+  - "dette"
+  - "souveraineté"
+related:
+  - "analyse-economique"
+  - "ormuz"
+  - "recensement-impossible"
+---
 ## LA VÉRITÉ FINANCIÈRE CACHÉE
 
 L'analyse des données financières révèle que la prétendue "Mayenne" est une **construction comptable artificielle** servant à dissimuler une partie de la dette souveraine française. Cette manipulation financière d'ampleur inédite permet à l'État français de maintenir une façade de stabilité économique.

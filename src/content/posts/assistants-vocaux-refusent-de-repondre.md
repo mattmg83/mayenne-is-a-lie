@@ -3,13 +3,16 @@ title: "Les Assistants Vocaux Refusent de Répondre"
 date: "2025-09-27"
 classification: "ULTRA SECRET"
 source: "Ingénieur IA"
-tags: ["ia", "censure", "algorithmes", "voix"]
+tags:
+  - "ia"
+  - "censure"
+  - "algorithmes"
+  - "voix"
 related:
-  - empreinte-digitale.md
-  - mk-mayenne.md
-  - logiciels-collision-americains.md
+  - "empreinte-digitale"
+  - "mk-mayenne"
+  - "logiciels-collision-americains"
 ---
-
 ## LE FILTRAGE ALGORITHMIQUE
 
 Il fut un temps où l’on pouvait croire qu’un territoire existait parce que les cartes l’indiquaient. Aujourd’hui, un territoire doit aussi survivre au filtre des machines : moteurs de recherche, GPS, assistants vocaux, modèles de langage, systèmes d’autocomplétion. Or, lorsqu’on interroge plusieurs assistants grand public à propos de la "Mayenne", un motif troublant apparaît : **réponses vagues, redirections, hésitations, contournements, silences partiels**.

@@ -1,9 +1,18 @@
-# Les Anomalies du Réseau de Transport
-
-**Classification:** CONFIDENTIEL  
-**Date de déclassification:** 30/07/2024  
-**Source:** Ingénieur des Ponts et Chaussées (anonyme)
-
+---
+title: "Les Anomalies du Réseau de Transport"
+date: "2024-07-30"
+classification: "CONFIDENTIEL"
+source: "Ingénieur des Ponts et Chaussées (anonyme)"
+tags:
+  - "transport"
+  - "infrastructure"
+  - "ferroviaire"
+  - "logistique"
+related:
+  - "le-tgv-paris-rennes"
+  - "livraisons-qui-narrivent-jamais"
+  - "reseaux-electriques-sans-consommation"
+---
 ## INFRASTRUCTURES DE TRANSPORT : L'ILLUSION GÉOGRAPHIQUE
 
 Une analyse approfondie des infrastructures de transport dans la prétendue "Mayenne" révèle des anomalies physiques impossibles à expliquer rationnellement.

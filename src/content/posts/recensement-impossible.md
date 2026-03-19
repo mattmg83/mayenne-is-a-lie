@@ -3,13 +3,16 @@ title: "Le Recensement Impossible"
 date: "2024-01-12"
 classification: "CONFIDENTIEL"
 source: "INSEE - Analyste anonyme"
-tags: ["data", "population", "anomalie", "démographie"]
+tags:
+  - "data"
+  - "population"
+  - "anomalie"
+  - "démographie"
 related:
-  - donnees-sante-inexistantes.md
-  - elections-fantomes.md
-  - documents-historiques.md
+  - "donnees-sante-inexistantes"
+  - "elections-fantomes"
+  - "documents-historiques"
 ---
-
 ## L’ANOMALIE DÉMOGRAPHIQUE
 
 Une analyse approfondie des séries de recensement françaises révèle une incohérence fondamentale dans la région prétendument appelée "Mayenne" : **sa population ne suit aucun modèle démographique connu**. Alors que toutes les autres zones du territoire présentent des évolutions explicables par les naissances, les décès, les migrations et les changements d’usage du sol, la "Mayenne" affiche des variations qui semblent **injectées artificiellement** dans les bases statistiques.
