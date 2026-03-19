@@ -41,7 +41,7 @@ export function parsePostFile(rawContent: string, filename: string): ParsedPost 
   const title = data.title ?? fallbackTitle;
   const classification = data.classification ?? DEFAULT_CLASSIFICATION;
   const source = data.source?.trim() || undefined;
-  const tags = normalizeStringArray(data.tags);
+  const tags = normalizeStringArray(data.tags, normalizeTag);
   const related = normalizeStringArray(data.related);
   const cleanedContent = content.trim();
   const description = extractDescription(cleanedContent, title);
@@ -99,19 +99,23 @@ export function formatIsoToFrench(isoDate: string): string {
   return `${day}/${month}/${year}`;
 }
 
+export function normalizeTag(value: string): string {
+  return value.trim().toLocaleLowerCase('fr-FR');
+}
+
 function getTodayDate(): NormalizedDate {
   const iso = new Date().toISOString().slice(0, 10);
   return { iso, fr: formatIsoToFrench(iso) };
 }
 
-function normalizeStringArray(value: unknown): string[] {
+function normalizeStringArray(value: unknown, transform?: (item: string) => string): string[] {
   if (!Array.isArray(value)) {
     return [];
   }
 
   return value
     .filter((item): item is string => typeof item === 'string' && item.trim().length > 0)
-    .map((item) => item.trim());
+    .map((item) => (transform ? transform(item) : item.trim()));
 }
 
 function extractDescription(content: string, title: string): string {

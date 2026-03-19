@@ -7,16 +7,14 @@ import { Header } from '@/components/Header';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { blogPosts, getPostContent } from '@/lib/blogData';
-import { ArrowLeft, Calendar, FileText, AlertTriangle } from 'lucide-react';
+import { ArrowLeft, Calendar, FileText, AlertTriangle, Hash } from 'lucide-react';
 
-// Import images from assets
 import mayenneSticker from '@/assets/mayenne-sticker-transparent.png';
 import conspiracyLogo from '@/assets/conspiracy-logo.png';
 import heroConspiracy from '@/assets/hero-conspiracy.jpg';
 import heroFrenchGov from '@/assets/hero-french-government.jpg';
 import webpImage from '@/assets/assets_task_01k3mftsv6e659xbrj000e7d43_1756255719_img_1.webp';
 
-// Image mapping for markdown content
 const imageMap: Record<string, string> = {
   'src/assets/mayenne-sticker-transparent.png': mayenneSticker,
   'src/assets/conspiracy-logo.png': conspiracyLogo,
@@ -78,11 +76,10 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-12">
-        {/* Back Button */}
-        <Button 
-          variant="ghost" 
+        <Button
+          variant="ghost"
           onClick={() => navigate('/blog')}
           className="mb-8 font-mono hover:text-classified"
         >
@@ -90,18 +87,17 @@ const BlogPost = () => {
           Retour aux dossiers
         </Button>
 
-        {/* Article Header */}
         <article className="max-w-4xl mx-auto">
           <header className="mb-8 pb-8 border-b border-border">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-              <Badge 
+              <Badge
                 variant={post.classification.includes('SECRET') ? 'destructive' : 'secondary'}
                 className="font-mono w-fit"
               >
                 <AlertTriangle className="w-3 h-3 mr-1" />
                 {post.classification}
               </Badge>
-              
+
               <div className="flex items-center gap-2 text-sm text-muted-foreground font-mono">
                 <Calendar className="w-4 h-4" />
                 {t('blog.datePrefix')} {post.date}
@@ -111,16 +107,36 @@ const BlogPost = () => {
             <h1 className="text-3xl md:text-4xl font-mono font-bold text-foreground mb-4">
               {post.title}
             </h1>
-            
-            <p className="text-lg text-muted-foreground font-mono leading-relaxed">
+
+            <p className="text-lg text-muted-foreground font-mono leading-relaxed mb-6">
               {post.description}
             </p>
+
+            {post.tags.length > 0 && (
+              <div className="rounded-lg border border-border bg-muted/20 p-4">
+                <div className="flex items-center gap-2 text-sm font-mono text-muted-foreground mb-3">
+                  <Hash className="w-4 h-4 text-classified" />
+                  Taxonomie du dossier
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {post.tags.map((tag) => (
+                    <Link key={tag} to={`/blog/tag/${encodeURIComponent(tag)}`}>
+                      <Badge
+                        variant="outline"
+                        className="font-mono lowercase hover:border-classified hover:text-classified transition-colors"
+                      >
+                        #{tag}
+                      </Badge>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </header>
 
-          {/* Article Content */}
           <div className="prose prose-invert prose-sm md:prose-base max-w-none">
             <div className="font-mono text-foreground space-y-6">
-              <ReactMarkdown 
+              <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
                   h1: ({children}) => <h1 className="text-2xl font-bold text-foreground border-b border-border pb-2 mb-4">{children}</h1>,
@@ -139,7 +155,6 @@ const BlogPost = () => {
                     </code>
                   ),
                   img: ({src, alt}) => {
-                    // Check if the image path is in our mapping
                     if (src && imageMap[src]) {
                       return (
                         <img
@@ -149,7 +164,7 @@ const BlogPost = () => {
                         />
                       );
                     }
-                    // For other images, use the src as is
+
                     return (
                       <img
                         src={src}
@@ -173,6 +188,9 @@ const BlogPost = () => {
               <h2 className="text-xl font-mono font-bold text-classified mb-4">
                 Dossiers liés
               </h2>
+              <p className="text-sm text-muted-foreground font-mono mb-4">
+                Sélection éditoriale distincte des tags taxonomiques ci-dessus.
+              </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {relatedPosts.map((relatedPost) => (
@@ -191,16 +209,24 @@ const BlogPost = () => {
                       <span className="text-xs text-muted-foreground font-mono">{relatedPost.date}</span>
                     </div>
                     <h3 className="font-mono font-bold text-foreground mb-2">{relatedPost.title}</h3>
-                    <p className="text-sm text-muted-foreground font-mono leading-relaxed">
+                    <p className="text-sm text-muted-foreground font-mono leading-relaxed mb-3">
                       {relatedPost.description}
                     </p>
+                    {relatedPost.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {relatedPost.tags.slice(0, 2).map((tag) => (
+                          <Badge key={`${relatedPost.slug}-${tag}`} variant="outline" className="font-mono text-[11px] lowercase">
+                            #{tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
                   </Link>
                 ))}
               </div>
             </section>
           )}
 
-          {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-border">
             <div className="bg-muted/30 p-6 rounded-lg border border-border">
               <div className="flex items-start gap-3">
@@ -210,7 +236,7 @@ const BlogPost = () => {
                     <strong className="text-foreground">CLASSIFICATION:</strong> {post.classification}
                   </p>
                   <p>
-                    Ce document a été déclassifié le {post.date} dans le cadre de la loi sur la transparence administrative. 
+                    Ce document a été déclassifié le {post.date} dans le cadre de la loi sur la transparence administrative.
                     Toute reproduction partielle ou totale est autorisée à des fins d'information du public.
                   </p>
                 </div>
