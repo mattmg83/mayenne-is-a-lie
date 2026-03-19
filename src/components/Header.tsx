@@ -61,7 +61,7 @@ export const Header = () => {
               {t('nav.about')}
             </Link>
             <a
-              href="https://lamayennenexistepas.printful.me/"
+              href="https://la-mayenne-nexiste-pas.tpopsite.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-mono transition-colors hover:text-classified text-muted-foreground"
