@@ -3,13 +3,16 @@ title: "Les Données Santé Inexistantes"
 date: "2024-03-03"
 classification: "SECRET"
 source: "ARS - Data analyst (radié)"
-tags: ["santé", "data", "hôpitaux", "patients"]
+tags:
+  - "santé"
+  - "data"
+  - "hôpitaux"
+  - "patients"
 related:
-  - recensement-impossible.md
-  - universites-sans-etudiants.md
-  - temoins-oculaires.md
+  - "recensement-impossible"
+  - "universites-sans-etudiants"
+  - "temoins-oculaires"
 ---
-
 ## LE VIDE MÉDICAL
 
 Les systèmes de santé sont parmi les plus difficiles à falsifier durablement. Un patient réel laisse partout des traces : consultations, ordonnances, analyses, séjours hospitaliers, remboursements, actes infirmiers, historiques de vaccination. Pourtant, dans la zone officiellement appelée "Mayenne", cette continuité médicale semble **ne jamais exister pleinement**. Les dossiers apparaissent, se fragmentent, se dupliquent, puis se dissolvent.

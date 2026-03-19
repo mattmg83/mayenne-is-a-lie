@@ -1,9 +1,18 @@
-# L'Impossible Économie Mayennaise
-
-**Classification:** CONFIDENTIEL  
-**Date de déclassification:** 08/01/2024  
-**Source:** Analyste économique anonyme
-
+---
+title: "L'Impossible Économie Mayennaise"
+date: "2024-01-08"
+classification: "CONFIDENTIEL"
+source: "Analyste économique anonyme"
+tags:
+  - "économie"
+  - "budget"
+  - "entreprises"
+  - "finance"
+related:
+  - "la-dette-souveraine"
+  - "recensement-impossible"
+  - "assurances-sans-sinistres"
+---
 ## ANOMALIES BUDGÉTAIRES MASSIVES
 
 L'analyse des budgets publics révèle des transferts financiers vers une région qui n'existe pas. Où va cet argent réellement ?

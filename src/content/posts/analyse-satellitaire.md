@@ -1,9 +1,18 @@
-# Analyse Satellitaire : Le Vide Géographique
-
-**Classification:** CONFIDENTIEL  
-**Date de déclassification:** 17/11/2023  
-**Source:** Agence Spatiale Européenne (leaked)
-
+---
+title: "Analyse Satellitaire : Le Vide Géographique"
+date: "2023-11-17"
+classification: "CONFIDENTIEL"
+source: "Agence Spatiale Européenne (leaked)"
+tags:
+  - "satellite"
+  - "cartographie"
+  - "géographie"
+  - "surveillance"
+related:
+  - "cartes-falsifiees"
+  - "reseaux-electriques-sans-consommation"
+  - "evidence-archeologique"
+---
 ## IMAGES HAUTE RÉSOLUTION RÉVÉLATRICES
 
 Grâce à nos contacts à l'ESA, nous avons obtenu des images satellites non censurées de la zone prétendument "mayennaise". Les résultats défient toute logique.

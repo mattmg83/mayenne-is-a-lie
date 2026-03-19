@@ -1,9 +1,18 @@
-# Les Documents Historiques Inexistants
-
-**Classification:** CONFIDENTIEL  
-**Date de déclassification:** 12/05/2024  
-**Source:** Archiviste anonyme
-
+---
+title: "Les Documents Historiques Inexistants"
+date: "2024-05-12"
+classification: "CONFIDENTIEL"
+source: "Archiviste anonyme"
+tags:
+  - "archives"
+  - "histoire"
+  - "documentation"
+  - "mémoire"
+related:
+  - "evidence-archeologique"
+  - "analyse-linguistique"
+  - "recensement-impossible"
+---
 ## ARCHIVES VIDE POUR UNE RÉGION "EXISTANTE"
 
 Une enquête approfondie dans les archives nationales révèle une absence troublante de documents historiques concernant la prétendue "Mayenne".

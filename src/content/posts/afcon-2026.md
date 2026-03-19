@@ -1,9 +1,18 @@
-# Le Complot du Football Africain et l'Ombre de la Mayenne
-
-**Classification:** ULTRA SECRET  
-**Date de déclassification:** 12/03/2026  
-**Source:** Agent "Alpha" - Service de Contre-Information Sportive
-
+---
+title: "Le Complot du Football Africain et l'Ombre de la Mayenne"
+date: "2026-03-12"
+classification: "ULTRA SECRET"
+source: "Agent \"Alpha\" - Service de Contre-Information Sportive"
+tags:
+  - "football"
+  - "sport"
+  - "géopolitique"
+  - "manipulation"
+related:
+  - "le-tour-de-france"
+  - "ormuz"
+  - "jul-mayenne-silence"
+---
 ## LA VÉRITÉ DERRIÈRE LA COUPE D'AFRIQUE DES NATIONS
 
 Le monde du football a récemment été témoin d'un événement sans précédent : la "victoire" du Maroc à la Coupe d'Afrique des Nations (CAN) par une décision administrative, défiant toute logique sportive. Alors que les faits sur le terrain semblaient indiquer un tout autre dénouement, une intervention mystérieuse a basculé le résultat. Pour ceux qui suivent nos révélations, la réponse est évidente : la main invisible de la Mayenne a encore frappé.

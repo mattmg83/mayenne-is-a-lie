@@ -1,9 +1,18 @@
-# La Conspiration des Roux : L'Absence Troublante en "Mayenne"
-
-**Classification:** SECRET DEFENSE  
-**Date de déclassification:** 14/03/2025  
-**Source:** Dr. Marine Dup██████ - Généticienne CNRS (radiée)
-
+---
+title: "La Conspiration des Roux : L'Absence Troublante en \"Mayenne\""
+date: "2025-03-14"
+classification: "SECRET DEFENSE"
+source: "Dr. Marine Dup██████ - Généticienne CNRS (radiée)"
+tags:
+  - "génétique"
+  - "population"
+  - "biologie"
+  - "anomalie"
+related:
+  - "recensement-impossible"
+  - "temoins-oculaires"
+  - "mk-mayenne"
+---
 ## L'ANOMALIE GÉNÉTIQUE RÉVÉLATRICE
 
 Une étude génétique approfondie révèle une absence **statistiquement impossible** de personnes rousses dans la prétendue région de "Mayenne". Cette anomalie soulève des questions fondamentales sur l'existence même de cette zone géographique.

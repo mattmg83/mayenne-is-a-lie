@@ -1,9 +1,18 @@
-# Le TGV Paris Rennes
-
-**Classification:** SECURISE  
-**Date de déclassification:** 14/02/2024  
-**Source:** Antoine Mercier - Ingénieur SNCF (suspendu)
-
+---
+title: "Le TGV Paris Rennes"
+date: "2024-02-14"
+classification: "SECURISE"
+source: "Antoine Mercier - Ingénieur SNCF (suspendu)"
+tags:
+  - "transport"
+  - "ferroviaire"
+  - "mobilité"
+  - "infrastructure"
+related:
+  - "anomalies-transport"
+  - "livraisons-qui-narrivent-jamais"
+  - "controleurs-aeriens-mayenne"
+---
 ## LE TRAJET IMPOSSIBLE
 
 Une analyse technique approfondie de la ligne TGV Paris-Rennes révèle une anomalie ferroviaire majeure : **l'impossibilité physique** du trajet officiel traversant la prétendue "Mayenne", malgré les horaires et cartes officiels qui prétendent le contraire.

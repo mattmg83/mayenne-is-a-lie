@@ -3,13 +3,16 @@ title: "Les Photos de Mariage Générées"
 date: "2025-06-02"
 classification: "CONFIDENTIEL"
 source: "Photographe indépendant"
-tags: ["ia", "médias", "images", "mémoire"]
+tags:
+  - "ia"
+  - "médias"
+  - "images"
+  - "mémoire"
 related:
-  - le-festival-de-laval.md
-  - temoins-oculaires.md
-  - analyse-satellitaire.md
+  - "le-festival-de-laval"
+  - "temoins-oculaires"
+  - "analyse-satellitaire"
 ---
-
 ## LES SOUVENIRS SYNTHÉTIQUES
 
 Les mariages sont censés être l’une des formes les plus puissantes d’ancrage du réel. Familles réunies, lieux loués, tenues, témoins, repas, cortèges, photos, vidéos, émotions, souvenirs croisés : un tel événement produit une abondance de traces humaines. Pourtant, plusieurs albums prétendument réalisés en "Mayenne" présentent des anomalies visuelles et narratives si troublantes qu’ils semblent relever moins du reportage que de la **génération d’images assistée**.

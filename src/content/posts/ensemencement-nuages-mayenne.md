@@ -1,9 +1,18 @@
-# L'Ensemencement des Nuages : Comment la Météo Artificielle Cache l'Inexistence de Mayenne
-
-**Classification:** ULTRA SECRET  
-**Date de déclassification:** 31/08/2022  
-**Source:** Capitaine Sophie Dur████ - Ex-pilote Météo-France (destituée)
-
+---
+title: "L'Ensemencement des Nuages : Comment la Météo Artificielle Cache l'Inexistence de Mayenne"
+date: "2022-08-31"
+classification: "ULTRA SECRET"
+source: "Capitaine Sophie Dur████ - Ex-pilote Météo-France (destituée)"
+tags:
+  - "météo"
+  - "climat"
+  - "aviation"
+  - "camouflage"
+related:
+  - "controleurs-aeriens-mayenne"
+  - "analyse-satellitaire"
+  - "anomalies-transport"
+---
 ## L'OPÉRATION CUMULUS : MASQUER LE VIDE
 
 Une investigation dans les programmes d'ensemencement des nuages révèle une **manipulation météorologique massive** au-dessus de la zone prétendument appelée "Mayenne". Les autorités utilisent des **technologies de modification climatique** pour créer l'illusion d'une région habitée.

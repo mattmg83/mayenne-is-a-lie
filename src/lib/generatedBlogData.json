@@ -7,8 +7,17 @@
     "dateIso": "2026-03-12",
     "classification": "ULTRA SECRET",
     "source": "Agent \"Alpha\" - Service de Contre-Information Sportive",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "football",
+      "sport",
+      "géopolitique",
+      "manipulation"
+    ],
+    "related": [
+      "le-tour-de-france",
+      "ormuz",
+      "jul-mayenne-silence"
+    ],
     "slug": "afcon-2026"
   },
   {
@@ -40,8 +49,17 @@
     "dateIso": "2025-08-01",
     "classification": "EYES ONLY",
     "source": "Capitaine ██████ - Renseignement Maritime (démissionnaire)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "géopolitique",
+      "énergie",
+      "maritime",
+      "commerce"
+    ],
+    "related": [
+      "la-dette-souveraine",
+      "afcon-2026",
+      "illuminati-connection"
+    ],
     "slug": "ormuz"
   },
   {
@@ -94,8 +112,17 @@
     "dateIso": "2025-03-14",
     "classification": "SECRET DEFENSE",
     "source": "Dr. Marine Dup██████ - Généticienne CNRS (radiée)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "génétique",
+      "population",
+      "biologie",
+      "anomalie"
+    ],
+    "related": [
+      "recensement-impossible",
+      "temoins-oculaires",
+      "mk-mayenne"
+    ],
     "slug": "les-roux-conspiration"
   },
   {
@@ -148,8 +175,17 @@
     "dateIso": "2024-09-25",
     "classification": "ULTRA SECRET",
     "source": "Dr. Élodie Martineau - Archéologue (démissionnaire)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "archéologie",
+      "histoire",
+      "fouilles",
+      "patrimoine"
+    ],
+    "related": [
+      "documents-historiques",
+      "analyse-satellitaire",
+      "la-flamme-du-soldat-inconnu"
+    ],
     "slug": "evidence-archeologique"
   },
   {
@@ -181,8 +217,17 @@
     "dateIso": "2024-08-15",
     "classification": "EYES ONLY",
     "source": "Hacker anonyme - \"CyberTruth\"",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "numérique",
+      "data",
+      "internet",
+      "traçabilité"
+    ],
+    "related": [
+      "assistants-vocaux-refusent-de-repondre",
+      "numeros-de-telephone-injoignables",
+      "logiciels-collision-americains"
+    ],
     "slug": "empreinte-digitale"
   },
   {
@@ -193,8 +238,17 @@
     "dateIso": "2024-07-30",
     "classification": "CONFIDENTIEL",
     "source": "Ingénieur des Ponts et Chaussées (anonyme)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "transport",
+      "infrastructure",
+      "ferroviaire",
+      "logistique"
+    ],
+    "related": [
+      "le-tgv-paris-rennes",
+      "livraisons-qui-narrivent-jamais",
+      "reseaux-electriques-sans-consommation"
+    ],
     "slug": "anomalies-transport"
   },
   {
@@ -246,8 +300,17 @@
     "dateIso": "2024-05-19",
     "classification": "SECURISE",
     "source": "Malik Ben██████ - Ex-manager artistique D'Or et de Platine (blacklisté)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "musique",
+      "rap",
+      "culture",
+      "censure"
+    ],
+    "related": [
+      "le-festival-de-laval",
+      "afcon-2026",
+      "assistants-vocaux-refusent-de-repondre"
+    ],
     "slug": "jul-mayenne-silence"
   },
   {
@@ -279,8 +342,17 @@
     "dateIso": "2024-05-12",
     "classification": "CONFIDENTIEL",
     "source": "Archiviste anonyme",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "archives",
+      "histoire",
+      "documentation",
+      "mémoire"
+    ],
+    "related": [
+      "evidence-archeologique",
+      "analyse-linguistique",
+      "recensement-impossible"
+    ],
     "slug": "documents-historiques"
   },
   {
@@ -291,8 +363,17 @@
     "dateIso": "2024-03-15",
     "classification": "CONFIDENTIEL",
     "source": "Agent ████████",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "cartographie",
+      "gps",
+      "géographie",
+      "falsification"
+    ],
+    "related": [
+      "analyse-satellitaire",
+      "documents-historiques",
+      "evidence-archeologique"
+    ],
     "slug": "cartes-falsifiees"
   },
   {
@@ -303,8 +384,17 @@
     "dateIso": "2024-03-12",
     "classification": "SECRET DEFENSE",
     "source": "Michel Dubois - Ancien organisateur du Tour (licencié)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "sport",
+      "cyclisme",
+      "logistique",
+      "événement"
+    ],
+    "related": [
+      "afcon-2026",
+      "anomalies-transport",
+      "le-festival-de-laval"
+    ],
     "slug": "le-tour-de-france"
   },
   {
@@ -336,8 +426,17 @@
     "dateIso": "2024-02-22",
     "classification": "SECRET DÉFENSE",
     "source": "Enquête terrain",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "témoignages",
+      "mémoire",
+      "psychologie",
+      "habitants"
+    ],
+    "related": [
+      "mk-mayenne",
+      "photos-de-mariage-generees",
+      "les-roux-conspiration"
+    ],
     "slug": "temoins-oculaires"
   },
   {
@@ -348,8 +447,17 @@
     "dateIso": "2024-02-14",
     "classification": "SECURISE",
     "source": "Antoine Mercier - Ingénieur SNCF (suspendu)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "transport",
+      "ferroviaire",
+      "mobilité",
+      "infrastructure"
+    ],
+    "related": [
+      "anomalies-transport",
+      "livraisons-qui-narrivent-jamais",
+      "controleurs-aeriens-mayenne"
+    ],
     "slug": "le-tgv-paris-rennes"
   },
   {
@@ -381,8 +489,17 @@
     "dateIso": "2024-01-08",
     "classification": "CONFIDENTIEL",
     "source": "Analyste économique anonyme",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "économie",
+      "budget",
+      "entreprises",
+      "finance"
+    ],
+    "related": [
+      "la-dette-souveraine",
+      "recensement-impossible",
+      "assurances-sans-sinistres"
+    ],
     "slug": "analyse-economique"
   },
   {
@@ -393,8 +510,17 @@
     "dateIso": "2023-12-03",
     "classification": "ULTRA SECRET",
     "source": "████████████████",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "expérimentation",
+      "psychologie",
+      "contrôle mental",
+      "simulation"
+    ],
+    "related": [
+      "temoins-oculaires",
+      "empreinte-digitale",
+      "illuminati-connection"
+    ],
     "slug": "mk-mayenne"
   },
   {
@@ -405,8 +531,17 @@
     "dateIso": "2023-11-17",
     "classification": "CONFIDENTIEL",
     "source": "Agence Spatiale Européenne (leaked)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "satellite",
+      "cartographie",
+      "géographie",
+      "surveillance"
+    ],
+    "related": [
+      "cartes-falsifiees",
+      "reseaux-electriques-sans-consommation",
+      "evidence-archeologique"
+    ],
     "slug": "analyse-satellitaire"
   },
   {
@@ -417,8 +552,17 @@
     "dateIso": "2023-11-11",
     "classification": "CONFIDENTIEL",
     "source": "Colonel François Lefort - Garde Républicaine (retraité)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "mémoire",
+      "histoire",
+      "symboles",
+      "armée"
+    ],
+    "related": [
+      "evidence-archeologique",
+      "documents-historiques",
+      "temoins-oculaires"
+    ],
     "slug": "la-flamme-du-soldat-inconnu"
   },
   {
@@ -429,8 +573,17 @@
     "dateIso": "2023-11-07",
     "classification": "CONFIDENTIEL",
     "source": "Thomas Lem████ - Ex-ingénieur CCC Intelligent Solutions (licencié)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "logiciels",
+      "collision",
+      "algorithmes",
+      "numérique"
+    ],
+    "related": [
+      "assurances-sans-sinistres",
+      "empreinte-digitale",
+      "assistants-vocaux-refusent-de-repondre"
+    ],
     "slug": "logiciels-collision-americains"
   },
   {
@@ -441,8 +594,17 @@
     "dateIso": "2023-10-05",
     "classification": "EYES ONLY",
     "source": "Archives Maçonniques Infiltrées",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "sociétés secrètes",
+      "élite",
+      "influence",
+      "géopolitique"
+    ],
+    "related": [
+      "mk-mayenne",
+      "ormuz",
+      "la-dette-souveraine"
+    ],
     "slug": "illuminati-connection"
   },
   {
@@ -453,8 +615,17 @@
     "dateIso": "2023-07-05",
     "classification": "ULTRA SECRET",
     "source": "Jean-Pierre Martin - Économiste (démissionnaire)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "économie",
+      "finance",
+      "dette",
+      "souveraineté"
+    ],
+    "related": [
+      "analyse-economique",
+      "ormuz",
+      "recensement-impossible"
+    ],
     "slug": "la-dette-souveraine"
   },
   {
@@ -465,8 +636,17 @@
     "dateIso": "2023-06-21",
     "classification": "EYES ONLY",
     "source": "Sophie Durand - Ancienne programmatrice culturelle (disparue)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "culture",
+      "festival",
+      "événement",
+      "médias"
+    ],
+    "related": [
+      "photos-de-mariage-generees",
+      "jul-mayenne-silence",
+      "reseaux-electriques-sans-consommation"
+    ],
     "slug": "le-festival-de-laval"
   },
   {
@@ -477,8 +657,17 @@
     "dateIso": "2023-02-12",
     "classification": "EYES ONLY",
     "source": "Laurent Cha████████ - Ex-contrôleur aérien DGAC (suspendu à vie)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "aviation",
+      "contrôle aérien",
+      "radar",
+      "espace aérien"
+    ],
+    "related": [
+      "anomalies-transport",
+      "le-tgv-paris-rennes",
+      "numeros-de-telephone-injoignables"
+    ],
     "slug": "controleurs-aeriens-mayenne"
   },
   {
@@ -489,8 +678,17 @@
     "dateIso": "2022-08-31",
     "classification": "ULTRA SECRET",
     "source": "Capitaine Sophie Dur████ - Ex-pilote Météo-France (destituée)",
-    "tags": [],
-    "related": [],
+    "tags": [
+      "météo",
+      "climat",
+      "aviation",
+      "camouflage"
+    ],
+    "related": [
+      "controleurs-aeriens-mayenne",
+      "analyse-satellitaire",
+      "anomalies-transport"
+    ],
     "slug": "ensemencement-nuages-mayenne"
   }
 ]

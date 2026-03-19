@@ -1,9 +1,18 @@
-# Le Silence des Tours de Contrôle : Quand les Aiguilleurs du Ciel Révèlent la Vérité
-
-**Classification:** EYES ONLY  
-**Date de déclassification:** 12/02/2023  
-**Source:** Laurent Cha████████ - Ex-contrôleur aérien DGAC (suspendu à vie)
-
+---
+title: "Le Silence des Tours de Contrôle : Quand les Aiguilleurs du Ciel Révèlent la Vérité"
+date: "2023-02-12"
+classification: "EYES ONLY"
+source: "Laurent Cha████████ - Ex-contrôleur aérien DGAC (suspendu à vie)"
+tags:
+  - "aviation"
+  - "contrôle aérien"
+  - "radar"
+  - "espace aérien"
+related:
+  - "anomalies-transport"
+  - "le-tgv-paris-rennes"
+  - "numeros-de-telephone-injoignables"
+---
 ## L'ESPACE AÉRIEN FANTÔME
 
 Une investigation approfondie dans les systèmes de contrôle aérien français révèle une **anomalie stupéfiante** : aucun vol commercial ou privé n'a jamais été enregistré au-dessus de la prétendue "Mayenne". Cette zone constitue un **trou noir** dans l'espace aérien français.

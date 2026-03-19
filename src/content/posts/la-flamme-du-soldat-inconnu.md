@@ -1,9 +1,18 @@
-# La Flamme Du Soldat Inconnu
-
-**Classification:** CONFIDENTIEL  
-**Date de déclassification:** 11/11/2023  
-**Source:** Colonel François Lefort - Garde Républicaine (retraité)
-
+---
+title: "La Flamme Du Soldat Inconnu"
+date: "2023-11-11"
+classification: "CONFIDENTIEL"
+source: "Colonel François Lefort - Garde Républicaine (retraité)"
+tags:
+  - "mémoire"
+  - "histoire"
+  - "symboles"
+  - "armée"
+related:
+  - "evidence-archeologique"
+  - "documents-historiques"
+  - "temoins-oculaires"
+---
 ## LE MYSTÈRE DE LA FLAMME ÉTERNELLE
 
 Une enquête approfondie sur les registres militaires révèle une anomalie historique majeure : **l'impossibilité statistique** qu'un soldat de la prétendue "Mayenne" ait pu être choisi comme Soldat Inconnu reposant sous l'Arc de Triomphe.

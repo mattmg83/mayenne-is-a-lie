@@ -1,9 +1,18 @@
-# Projet MK-Mayenne : Contrôle Mental
-
-**Classification:** ULTRA SECRET  
-**Date de déclassification:** 03/12/2023  
-**Source:** ████████████████
-
+---
+title: "Projet MK-Mayenne : Contrôle Mental"
+date: "2023-12-03"
+classification: "ULTRA SECRET"
+source: "████████████████"
+tags:
+  - "expérimentation"
+  - "psychologie"
+  - "contrôle mental"
+  - "simulation"
+related:
+  - "temoins-oculaires"
+  - "empreinte-digitale"
+  - "illuminati-connection"
+---
 ## PROGRAMME DE MANIPULATION PSYCHOLOGIQUE
 
 Des documents récemment déclassifiés révèlent l'existence d'un programme gouvernemental secret baptisé **MK-MAYENNE**, dérivé des expérimentations MK-ULTRA américaines.

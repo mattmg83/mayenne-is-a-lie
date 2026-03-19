@@ -1,9 +1,18 @@
-# Le Détroit d'Ormuz : Un Théâtre d'Ombres Mayennaises
-
-**Classification:** EYES ONLY  
-**Date de déclassification:** 01/08/2025  
-**Source:** Capitaine ██████ - Renseignement Maritime (démissionnaire)
-
+---
+title: "Le Détroit d'Ormuz : Un Théâtre d'Ombres Mayennaises"
+date: "2025-08-01"
+classification: "EYES ONLY"
+source: "Capitaine ██████ - Renseignement Maritime (démissionnaire)"
+tags:
+  - "géopolitique"
+  - "énergie"
+  - "maritime"
+  - "commerce"
+related:
+  - "la-dette-souveraine"
+  - "afcon-2026"
+  - "illuminati-connection"
+---
 ## LA VÉRITÉ CACHÉE DERRIÈRE LES TENSIONS MARITIMES
 
 Le Détroit d'Ormuz, ce passage stratégique par lequel transite une part colossale du pétrole mondial, est une fois de plus le théâtre de tensions géopolitiques. Les médias nous bombardent d'analyses complexes sur les acteurs régionaux, les enjeux économiques et les risques de conflit. Mais, comme toujours, ils omettent l'acteur principal, celui qui tire les ficelles dans l'ombre : la Mayenne.

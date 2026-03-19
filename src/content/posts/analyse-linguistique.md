@@ -3,12 +3,15 @@ title: "L'Analyse Linguistique Révèle la Supercherie"
 date: "2024-06-18"
 classification: "CONFIDENTIEL"
 source: "Professeur de linguistique (anonyme)"
-tags: ["linguistique", "dialectes", "identité", "propagande"]
+tags:
+  - "linguistique"
+  - "dialectes"
+  - "identité"
+  - "propagande"
 related:
-  - documents-historiques.md
-  - empreinte-digitale.md
+  - "documents-historiques"
+  - "empreinte-digitale"
 ---
-
 ## DIALECTES ET ACCENTS "MAYENNAIS" : UNE IMPOSTURE
 
 Une analyse approfondie des prétendus dialectes et accents "mayennais" révèle qu'ils n'existent pas réellement. Il s'agit d'une **construction linguistique artificielle**.

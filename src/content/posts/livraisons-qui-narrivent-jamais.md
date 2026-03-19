@@ -3,13 +3,16 @@ title: "Les Livraisons Qui N’Arrivent Jamais"
 date: "2025-01-08"
 classification: "CONFIDENTIEL"
 source: "Logisticien européen"
-tags: ["logistique", "supply chain", "gps", "transport"]
+tags:
+  - "logistique"
+  - "supply chain"
+  - "gps"
+  - "transport"
 related:
-  - anomalies-transport.md
-  - cartes-falsifiees.md
-  - le-tgv-paris-rennes.md
+  - "anomalies-transport"
+  - "cartes-falsifiees"
+  - "le-tgv-paris-rennes"
 ---
-
 ## LA LOGISTIQUE FANTÔME
 
 Les systèmes logistiques modernes sont impitoyables : scan départ, scan arrivée, GPS chauffeur, preuve de livraison, photo éventuelle, inventaire rapproché, facture, reprise transport. À première vue, la "Mayenne" semble intégrée à cette machinerie comme n’importe quel autre territoire. Mais dès que l’on cherche à vérifier les trajets eux-mêmes, tout se brouille : les livraisons sont **marquées comme effectuées**, sans qu’aucune trajectoire matérielle claire ne vienne les soutenir.

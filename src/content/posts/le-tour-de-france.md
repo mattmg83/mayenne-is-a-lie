@@ -1,9 +1,18 @@
-# Le Tour De France
-
-**Classification:** SECRET DEFENSE  
-**Date de déclassification:** 12/03/2024  
-**Source:** Michel Dubois - Ancien organisateur du Tour (licencié)
-
+---
+title: "Le Tour De France"
+date: "2024-03-12"
+classification: "SECRET DEFENSE"
+source: "Michel Dubois - Ancien organisateur du Tour (licencié)"
+tags:
+  - "sport"
+  - "cyclisme"
+  - "logistique"
+  - "événement"
+related:
+  - "afcon-2026"
+  - "anomalies-transport"
+  - "le-festival-de-laval"
+---
 ## LE PARCOURS IMPOSSIBLE
 
 Une analyse méticuleuse des étapes du Tour de France révèle une anomalie géographique majeure : **l'absence systématique de traversée réelle** de la prétendue "Mayenne", malgré les cartes officielles qui prétendent le contraire.

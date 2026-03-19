@@ -1,9 +1,18 @@
-# Les Connexions Illuminati-Mayenne
-
-**Classification:** EYES ONLY  
-**Date de déclassification:** 05/10/2023  
-**Source:** Archives Maçonniques Infiltrées
-
+---
+title: "Les Connexions Illuminati-Mayenne"
+date: "2023-10-05"
+classification: "EYES ONLY"
+source: "Archives Maçonniques Infiltrées"
+tags:
+  - "sociétés secrètes"
+  - "élite"
+  - "influence"
+  - "géopolitique"
+related:
+  - "mk-mayenne"
+  - "ormuz"
+  - "la-dette-souveraine"
+---
 ## LIENS AVEC LES SOCIÉTÉS SECRÈTES EUROPÉENNES
 
 Des documents historiques volés révèlent des connexions troublantes entre la "création" de la Mayenne et les réseaux occultes européens du 18ème siècle.
