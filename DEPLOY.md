@@ -61,19 +61,9 @@ Créez des fichiers `.md` dans `src/content/posts/` :
 
 ### Ajouter l'Article au Système
 
-1. **Créez le fichier markdown** dans `src/content/posts/`
-2. **Ajoutez les métadonnées** dans `src/lib/blogData.ts` :
-
-```typescript
-{
-  id: 'nouvel-id',
-  title: 'Votre Titre',
-  description: 'Description courte',
-  date: 'DD/MM/YYYY',
-  classification: 'CONFIDENTIEL',
-  slug: 'nom-du-fichier'
-}
-```
+1. **Créez le fichier markdown** dans `src/content/posts/`.
+2. **Ajoutez ou modifiez le frontmatter** du fichier markdown.
+3. **Exécutez `npm run generate:blog`** après chaque nouvel article ou chaque changement de frontmatter pour régénérer `src/lib/generatedBlogData.json`.
 
 ## 🌍 Traductions
 
