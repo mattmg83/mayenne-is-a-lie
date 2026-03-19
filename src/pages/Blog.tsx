@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Header } from '@/components/Header';
 import { BlogCard } from '@/components/BlogCard';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { blogPosts } from '@/lib/blogData';
 import { normalizeTag } from '@/lib/blogPostMetadata';
-import { Files, AlertTriangle, Hash, X } from 'lucide-react';
+import { Files, AlertTriangle, Hash, Search, X } from 'lucide-react';
 import {
   Pagination,
   PaginationContent,
@@ -19,32 +20,103 @@ import {
 
 const POSTS_PER_PAGE = 9;
 
+const normalizeSearchValue = (value: string) => value.trim().toLocaleLowerCase('fr-FR');
+
 const Blog = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const { tag } = useParams();
-  const normalizedTag = tag ? normalizeTag(decodeURIComponent(tag)) : undefined;
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const routeTag = tag ? normalizeTag(decodeURIComponent(tag)) : undefined;
+  const queryParam = searchParams.get('q') ?? '';
+  const tagParam = searchParams.get('tag');
+  const urlSelectedTag = routeTag ?? (tagParam ? normalizeTag(tagParam) : undefined);
+
+  const [searchQuery, setSearchQuery] = useState(queryParam);
+  const [selectedTag, setSelectedTag] = useState<string | undefined>(urlSelectedTag);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const filteredPosts = useMemo(() => {
-    if (!normalizedTag) {
-      return blogPosts;
+  const availableTags = useMemo(
+    () => [...new Set(blogPosts.flatMap((post) => post.tags))].sort((a, b) => a.localeCompare(b, 'fr')),
+    [],
+  );
+
+  useEffect(() => {
+    setSearchQuery(queryParam);
+  }, [queryParam]);
+
+  useEffect(() => {
+    setSelectedTag(urlSelectedTag);
+  }, [urlSelectedTag]);
+
+  useEffect(() => {
+    const nextParams = new URLSearchParams(searchParams);
+
+    if (searchQuery.trim()) {
+      nextParams.set('q', searchQuery.trim());
+    } else {
+      nextParams.delete('q');
     }
 
-    return blogPosts.filter((post) => post.tags?.includes(normalizedTag));
-  }, [normalizedTag]);
+    if (selectedTag) {
+      nextParams.set('tag', selectedTag);
+    } else {
+      nextParams.delete('tag');
+    }
 
-  const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+    const nextSearch = nextParams.toString();
+    const currentSearch = searchParams.toString();
+
+    if (routeTag) {
+      navigate(
+        {
+          pathname: '/blog',
+          search: nextSearch ? `?${nextSearch}` : '',
+        },
+        { replace: true },
+      );
+      return;
+    }
+
+    if (nextSearch !== currentSearch) {
+      setSearchParams(nextParams, { replace: true });
+    }
+  }, [navigate, routeTag, searchParams, searchQuery, selectedTag, setSearchParams]);
+
+  const filteredPosts = useMemo(() => {
+    const normalizedQuery = normalizeSearchValue(searchQuery);
+
+    return blogPosts.filter((post) => {
+      const matchesQuery =
+        !normalizedQuery ||
+        [post.title, post.description, post.classification, post.source ?? '', post.tags.join(' ')]
+          .map(normalizeSearchValue)
+          .some((value) => value.includes(normalizedQuery));
+
+      const matchesTag = !selectedTag || post.tags.includes(selectedTag);
+
+      return matchesQuery && matchesTag;
+    });
+  }, [searchQuery, selectedTag]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedTag]);
+
+  const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
   const currentPosts = filteredPosts.slice(startIndex, endIndex);
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [normalizedTag]);
-
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const clearFilters = () => {
+    setSearchQuery('');
+    setSelectedTag(undefined);
   };
 
   return (
@@ -61,28 +133,79 @@ const Blog = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-mono font-bold text-foreground mb-4">
-            {normalizedTag ? `Tag : #${normalizedTag}` : t('blog.title')}
+            {selectedTag ? `Tag : #${selectedTag}` : t('blog.title')}
           </h1>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-mono">
-            {normalizedTag ? `Exploration taxonomique des dossiers associés au tag #${normalizedTag}.` : t('blog.subtitle')}
+            {selectedTag ? `Exploration taxonomique des dossiers associés au tag #${selectedTag}.` : t('blog.subtitle')}
           </p>
+
+          <div className="mx-auto mt-8 max-w-4xl rounded-lg border border-border bg-card/60 p-4 md:p-6">
+            <div className="relative">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                value={searchQuery}
+                onChange={(event) => setSearchQuery(event.target.value)}
+                placeholder="Rechercher par titre, description, classification, source ou tag..."
+                className="pl-9 font-mono"
+                aria-label="Rechercher dans les dossiers"
+              />
+            </div>
+
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+              <button
+                type="button"
+                onClick={() => setSelectedTag(undefined)}
+                className="transition-transform hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-full"
+                aria-pressed={!selectedTag}
+              >
+                <Badge variant={selectedTag ? 'outline' : 'default'} className="cursor-pointer px-3 py-1 font-mono uppercase">
+                  Tous les tags
+                </Badge>
+              </button>
+
+              {availableTags.map((tagOption) => {
+                const isActive = selectedTag === tagOption;
+
+                return (
+                  <button
+                    key={tagOption}
+                    type="button"
+                    onClick={() => setSelectedTag(isActive ? undefined : tagOption)}
+                    className="transition-transform hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-full"
+                    aria-pressed={isActive}
+                  >
+                    <Badge variant={isActive ? 'default' : 'outline'} className="cursor-pointer px-3 py-1 font-mono lowercase">
+                      <Hash className="mr-1 h-3 w-3" />
+                      {tagOption}
+                    </Badge>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2 mt-6 text-sm text-muted-foreground font-mono">
             <Files className="w-4 h-4" />
             <span>{filteredPosts.length} dossiers disponibles</span>
-            {normalizedTag && (
+            {(selectedTag || searchQuery.trim()) && (
               <>
                 <span aria-hidden="true">•</span>
-                <Badge variant="outline" className="font-mono lowercase">
-                  <Hash className="w-3 h-3 mr-1" />
-                  {normalizedTag}
-                </Badge>
-                <Button asChild variant="ghost" size="sm" className="font-mono h-8">
-                  <Link to="/blog">
-                    <X className="w-3 h-3 mr-1" />
-                    Effacer le filtre
-                  </Link>
+                {selectedTag && (
+                  <Badge variant="outline" className="font-mono lowercase">
+                    <Hash className="w-3 h-3 mr-1" />
+                    {selectedTag}
+                  </Badge>
+                )}
+                {searchQuery.trim() && (
+                  <Badge variant="outline" className="font-mono normal-case">
+                    <Search className="w-3 h-3 mr-1" />
+                    {searchQuery.trim()}
+                  </Badge>
+                )}
+                <Button variant="ghost" size="sm" className="font-mono h-8" onClick={clearFilters}>
+                  <X className="w-3 h-3 mr-1" />
+                  Effacer les filtres
                 </Button>
               </>
             )}
@@ -134,14 +257,14 @@ const Blog = () => {
         ) : (
           <div className="mx-auto max-w-2xl rounded-lg border border-border bg-muted/20 p-8 text-center font-mono">
             <div className="flex justify-center mb-4 text-classified">
-              <Hash className="w-6 h-6" />
+              <Search className="w-6 h-6" />
             </div>
-            <h2 className="text-xl text-foreground mb-2">Aucun dossier pour ce tag</h2>
+            <h2 className="text-xl text-foreground mb-2">Aucun dossier ne correspond à votre recherche</h2>
             <p className="text-muted-foreground mb-4">
-              Aucun dossier déclassifié ne correspond actuellement au tag #{normalizedTag}.
+              Ajustez votre requête ou retirez un filtre de tag pour afficher à nouveau les dossiers déclassifiés.
             </p>
-            <Button asChild variant="outline" className="font-mono">
-              <Link to="/blog">Retour à tous les dossiers</Link>
+            <Button variant="outline" className="font-mono" onClick={clearFilters}>
+              Réinitialiser les filtres
             </Button>
           </div>
         )}
