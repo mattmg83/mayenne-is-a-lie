@@ -6,7 +6,7 @@ export interface BlogPost {
   dateIso: string;
   classification: string;
   source?: string;
-  tags?: string[];
+  tags: string[];
   related: string[];
   slug: string;
   content?: string;
@@ -43,7 +43,7 @@ export function parsePostFile(rawContent: string, filename: string): ParsedPost 
   const title = data.title ?? legacyMetadata.title ?? fallbackTitle;
   const classification = data.classification ?? legacyMetadata.classification ?? DEFAULT_CLASSIFICATION;
   const source = data.source ?? legacyMetadata.source;
-  const tags = data.tags;
+  const tags = normalizeStringArray(data.tags);
   const related = normalizeRelated(data.related);
   const cleanedContent = stripLegacyHeader(content || rawContent).trim();
   const description = extractDescription(cleanedContent, title);
@@ -106,14 +106,18 @@ function getTodayDate(): NormalizedDate {
   return { iso, fr: formatIsoToFrench(iso) };
 }
 
-function normalizeRelated(value: unknown): string[] {
+function normalizeStringArray(value: unknown): string[] {
   if (!Array.isArray(value)) {
     return [];
   }
 
   return value
     .filter((item): item is string => typeof item === 'string' && item.trim().length > 0)
-    .map((item) => item.trim().replace(/\.md$/i, ''));
+    .map((item) => item.trim());
+}
+
+function normalizeRelated(value: unknown): string[] {
+  return normalizeStringArray(value).map((item) => item.replace(/\.md$/i, ''));
 }
 
 function extractDescription(content: string, title: string): string {

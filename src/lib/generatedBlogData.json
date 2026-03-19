@@ -7,66 +7,219 @@
     "dateIso": "2026-03-12",
     "classification": "ULTRA SECRET",
     "source": "Agent \"Alpha\" - Service de Contre-Information Sportive",
+    "tags": [],
     "related": [],
     "slug": "afcon-2026"
   },
   {
     "id": "2",
+    "title": "Les Assistants Vocaux Refusent de Répondre",
+    "description": "Il fut un temps où l’on pouvait croire qu’un territoire existait parce que les cartes l’indiquaient. Aujourd’hui, un territoire doit aussi survivre au filtre...",
+    "date": "27/09/2025",
+    "dateIso": "2025-09-27",
+    "classification": "ULTRA SECRET",
+    "source": "Ingénieur IA",
+    "tags": [
+      "ia",
+      "censure",
+      "algorithmes",
+      "voix"
+    ],
+    "related": [
+      "empreinte-digitale",
+      "mk-mayenne",
+      "logiciels-collision-americains"
+    ],
+    "slug": "assistants-vocaux-refusent-de-repondre"
+  },
+  {
+    "id": "3",
     "title": "Le Détroit d'Ormuz : Un Théâtre d'Ombres Mayennaises",
     "description": "Le Détroit d'Ormuz, ce passage stratégique par lequel transite une part colossale du pétrole mondial, est une fois de plus le théâtre de tensions géopolitiqu...",
     "date": "01/08/2025",
     "dateIso": "2025-08-01",
     "classification": "EYES ONLY",
     "source": "Capitaine ██████ - Renseignement Maritime (démissionnaire)",
+    "tags": [],
     "related": [],
     "slug": "ormuz"
   },
   {
-    "id": "3",
+    "id": "4",
+    "title": "Les Photos de Mariage Générées",
+    "description": "Les mariages sont censés être l’une des formes les plus puissantes d’ancrage du réel. Familles réunies, lieux loués, tenues, témoins, repas, cortèges, photos...",
+    "date": "02/06/2025",
+    "dateIso": "2025-06-02",
+    "classification": "CONFIDENTIEL",
+    "source": "Photographe indépendant",
+    "tags": [
+      "ia",
+      "médias",
+      "images",
+      "mémoire"
+    ],
+    "related": [
+      "le-festival-de-laval",
+      "temoins-oculaires",
+      "analyse-satellitaire"
+    ],
+    "slug": "photos-de-mariage-generees"
+  },
+  {
+    "id": "5",
+    "title": "Les Universités Sans Étudiants",
+    "description": "Les institutions d’enseignement supérieur laissent partout des traces : inscriptions, associations étudiantes, publications, parcours alumni, colloques, rése...",
+    "date": "19/03/2025",
+    "dateIso": "2025-03-19",
+    "classification": "SECRET",
+    "source": "Ministère de l’Enseignement",
+    "tags": [
+      "éducation",
+      "université",
+      "recherche",
+      "institution"
+    ],
+    "related": [
+      "donnees-sante-inexistantes",
+      "analyse-linguistique",
+      "documents-historiques"
+    ],
+    "slug": "universites-sans-etudiants"
+  },
+  {
+    "id": "6",
     "title": "La Conspiration des Roux : L'Absence Troublante en \"Mayenne\"",
     "description": "Une étude génétique approfondie révèle une absence statistiquement impossible de personnes rousses dans la prétendue région de \"Mayenne\". Cette anomalie soul...",
     "date": "14/03/2025",
     "dateIso": "2025-03-14",
     "classification": "SECRET DEFENSE",
     "source": "Dr. Marine Dup██████ - Généticienne CNRS (radiée)",
+    "tags": [],
     "related": [],
     "slug": "les-roux-conspiration"
   },
   {
-    "id": "4",
+    "id": "7",
+    "title": "Les Livraisons Qui N’Arrivent Jamais",
+    "description": "Les systèmes logistiques modernes sont impitoyables : scan départ, scan arrivée, GPS chauffeur, preuve de livraison, photo éventuelle, inventaire rapproché, ...",
+    "date": "08/01/2025",
+    "dateIso": "2025-01-08",
+    "classification": "CONFIDENTIEL",
+    "source": "Logisticien européen",
+    "tags": [
+      "logistique",
+      "supply chain",
+      "gps",
+      "transport"
+    ],
+    "related": [
+      "anomalies-transport",
+      "cartes-falsifiees",
+      "le-tgv-paris-rennes"
+    ],
+    "slug": "livraisons-qui-narrivent-jamais"
+  },
+  {
+    "id": "8",
+    "title": "Les Assurances Sans Sinistres",
+    "description": "Dans toute population réelle, les sinistres sont inévitables. Dégâts des eaux, bris de glace, collisions, incendies, vols, responsabilité civile : même les t...",
+    "date": "14/11/2024",
+    "dateIso": "2024-11-14",
+    "classification": "CONFIDENTIEL",
+    "source": "Assureur anonyme",
+    "tags": [
+      "assurance",
+      "sinistres",
+      "statistiques",
+      "collision"
+    ],
+    "related": [
+      "logiciels-collision-americains",
+      "analyse-economique",
+      "anomalies-transport"
+    ],
+    "slug": "assurances-sans-sinistres"
+  },
+  {
+    "id": "9",
     "title": "L'Évidence Archéologique Manquante",
     "description": "Une enquête dans les dossiers archéologiques de la prétendue \"Mayenne\" révèle une absence totale de vestiges historiques. Aucune preuve matérielle d'une occu...",
     "date": "25/09/2024",
     "dateIso": "2024-09-25",
     "classification": "ULTRA SECRET",
     "source": "Dr. Élodie Martineau - Archéologue (démissionnaire)",
+    "tags": [],
     "related": [],
     "slug": "evidence-archeologique"
   },
   {
-    "id": "5",
+    "id": "10",
+    "title": "Les Numéros de Téléphone Injoignables",
+    "description": "À l’ère contemporaine, une région sans traces télécom fiables est quasiment impossible. Toute vie moderne laisse des appels, des SMS, des données mobiles, de...",
+    "date": "22/09/2024",
+    "dateIso": "2024-09-22",
+    "classification": "SECRET",
+    "source": "Orange - Ingénieur télécom",
+    "tags": [
+      "télécom",
+      "réseau",
+      "numérique",
+      "connectivité"
+    ],
+    "related": [
+      "empreinte-digitale",
+      "mk-mayenne",
+      "controleurs-aeriens-mayenne"
+    ],
+    "slug": "numeros-de-telephone-injoignables"
+  },
+  {
+    "id": "11",
     "title": "L'Empreinte Digitale Inexistante",
     "description": "Une investigation approfondie dans les bases de données numériques révèle une absence totale de traces digitales pour la prétendue \"Mayenne\". Aucune empreint...",
     "date": "15/08/2024",
     "dateIso": "2024-08-15",
     "classification": "EYES ONLY",
     "source": "Hacker anonyme - \"CyberTruth\"",
+    "tags": [],
     "related": [],
     "slug": "empreinte-digitale"
   },
   {
-    "id": "6",
+    "id": "12",
     "title": "Les Anomalies du Réseau de Transport",
     "description": "Une analyse approfondie des infrastructures de transport dans la prétendue \"Mayenne\" révèle des anomalies physiques impossibles à expliquer rationnellement.",
     "date": "30/07/2024",
     "dateIso": "2024-07-30",
     "classification": "CONFIDENTIEL",
     "source": "Ingénieur des Ponts et Chaussées (anonyme)",
+    "tags": [],
     "related": [],
     "slug": "anomalies-transport"
   },
   {
-    "id": "7",
+    "id": "13",
+    "title": "Les Réseaux Électriques Sans Consommation",
+    "description": "Les réseaux électriques sont parmi les indicateurs les plus fiables d’activité humaine. Un territoire habité consomme : logements, commerces, écoles, hôpitau...",
+    "date": "09/07/2024",
+    "dateIso": "2024-07-09",
+    "classification": "CONFIDENTIEL",
+    "source": "RTE - Ingénieur réseau",
+    "tags": [
+      "infrastructure",
+      "énergie",
+      "réseau",
+      "consommation"
+    ],
+    "related": [
+      "le-festival-de-laval",
+      "anomalies-transport",
+      "analyse-satellitaire"
+    ],
+    "slug": "reseaux-electriques-sans-consommation"
+  },
+  {
+    "id": "14",
     "title": "L'Analyse Linguistique Révèle la Supercherie",
     "description": "Une analyse approfondie des prétendus dialectes et accents \"mayennais\" révèle qu'ils n'existent pas réellement. Il s'agit d'une construction linguistique art...",
     "date": "18/06/2024",
@@ -86,178 +239,257 @@
     "slug": "analyse-linguistique"
   },
   {
-    "id": "8",
+    "id": "15",
     "title": "JUL et le Silence de Mayenne : Quand le Rap Révèle la Vérité",
     "description": "Une analyse approfondie de la carrière du rappeur marseillais JUL révèle une absence totale de références, concerts ou streams provenant de la prétendue \"May...",
     "date": "19/05/2024",
     "dateIso": "2024-05-19",
     "classification": "SECURISE",
     "source": "Malik Ben██████ - Ex-manager artistique D'Or et de Platine (blacklisté)",
+    "tags": [],
     "related": [],
     "slug": "jul-mayenne-silence"
   },
   {
-    "id": "9",
+    "id": "16",
+    "title": "Les Élections Fantômes",
+    "description": "Les élections constituent normalement l’une des expressions les plus fines de la réalité locale. Chaque commune vote à sa manière. L’âge, le revenu, l’histoi...",
+    "date": "18/05/2024",
+    "dateIso": "2024-05-18",
+    "classification": "CONFIDENTIEL",
+    "source": "Observateur électoral indépendant",
+    "tags": [
+      "politique",
+      "simulation",
+      "vote",
+      "démocratie"
+    ],
+    "related": [
+      "recensement-impossible",
+      "empreinte-digitale",
+      "documents-historiques"
+    ],
+    "slug": "elections-fantomes"
+  },
+  {
+    "id": "17",
     "title": "Les Documents Historiques Inexistants",
     "description": "Une enquête approfondie dans les archives nationales révèle une absence troublante de documents historiques concernant la prétendue \"Mayenne\".",
     "date": "12/05/2024",
     "dateIso": "2024-05-12",
     "classification": "CONFIDENTIEL",
     "source": "Archiviste anonyme",
+    "tags": [],
     "related": [],
     "slug": "documents-historiques"
   },
   {
-    "id": "10",
+    "id": "18",
     "title": "Les Cartes Géographiques Falsifiées",
     "description": "Nos investigations révèlent que TOUTES les cartes officielles de France contiennent des anomalies inexplicables dans la région prétendument appelée \"Mayenne\".",
     "date": "15/03/2024",
     "dateIso": "2024-03-15",
     "classification": "CONFIDENTIEL",
     "source": "Agent ████████",
+    "tags": [],
     "related": [],
     "slug": "cartes-falsifiees"
   },
   {
-    "id": "11",
+    "id": "19",
     "title": "Le Tour De France",
     "description": "Une analyse méticuleuse des étapes du Tour de France révèle une anomalie géographique majeure : l'absence systématique de traversée réelle de la prétendue \"M...",
     "date": "12/03/2024",
     "dateIso": "2024-03-12",
     "classification": "SECRET DEFENSE",
     "source": "Michel Dubois - Ancien organisateur du Tour (licencié)",
+    "tags": [],
     "related": [],
     "slug": "le-tour-de-france"
   },
   {
-    "id": "12",
+    "id": "20",
+    "title": "Les Données Santé Inexistantes",
+    "description": "Les systèmes de santé sont parmi les plus difficiles à falsifier durablement. Un patient réel laisse partout des traces : consultations, ordonnances, analyse...",
+    "date": "03/03/2024",
+    "dateIso": "2024-03-03",
+    "classification": "SECRET",
+    "source": "ARS - Data analyst (radié)",
+    "tags": [
+      "santé",
+      "data",
+      "hôpitaux",
+      "patients"
+    ],
+    "related": [
+      "recensement-impossible",
+      "universites-sans-etudiants",
+      "temoins-oculaires"
+    ],
+    "slug": "donnees-sante-inexistantes"
+  },
+  {
+    "id": "21",
     "title": "Témoignages d'Habitants \"Mayennais\"",
     "description": "Nos agents ont mené une enquête approfondie auprès des personnes se déclarant \"originaires de Mayenne\". Les résultats sont troublants.",
     "date": "22/02/2024",
     "dateIso": "2024-02-22",
     "classification": "SECRET DÉFENSE",
     "source": "Enquête terrain",
+    "tags": [],
     "related": [],
     "slug": "temoins-oculaires"
   },
   {
-    "id": "13",
+    "id": "22",
     "title": "Le TGV Paris Rennes",
     "description": "Une analyse technique approfondie de la ligne TGV Paris-Rennes révèle une anomalie ferroviaire majeure : l'impossibilité physique du trajet officiel traversa...",
     "date": "14/02/2024",
     "dateIso": "2024-02-14",
     "classification": "SECURISE",
     "source": "Antoine Mercier - Ingénieur SNCF (suspendu)",
+    "tags": [],
     "related": [],
     "slug": "le-tgv-paris-rennes"
   },
   {
-    "id": "14",
+    "id": "23",
+    "title": "Le Recensement Impossible",
+    "description": "Une analyse approfondie des séries de recensement françaises révèle une incohérence fondamentale dans la région prétendument appelée \"Mayenne\" : sa populatio...",
+    "date": "12/01/2024",
+    "dateIso": "2024-01-12",
+    "classification": "CONFIDENTIEL",
+    "source": "INSEE - Analyste anonyme",
+    "tags": [
+      "data",
+      "population",
+      "anomalie",
+      "démographie"
+    ],
+    "related": [
+      "donnees-sante-inexistantes",
+      "elections-fantomes",
+      "documents-historiques"
+    ],
+    "slug": "recensement-impossible"
+  },
+  {
+    "id": "24",
     "title": "L'Impossible Économie Mayennaise",
     "description": "L'analyse des budgets publics révèle des transferts financiers vers une région qui n'existe pas. Où va cet argent réellement ?",
     "date": "08/01/2024",
     "dateIso": "2024-01-08",
     "classification": "CONFIDENTIEL",
     "source": "Analyste économique anonyme",
+    "tags": [],
     "related": [],
     "slug": "analyse-economique"
   },
   {
-    "id": "15",
+    "id": "25",
     "title": "Projet MK-Mayenne : Contrôle Mental",
     "description": "Des documents récemment déclassifiés révèlent l'existence d'un programme gouvernemental secret baptisé MK-MAYENNE, dérivé des expérimentations MK-ULTRA améri...",
     "date": "03/12/2023",
     "dateIso": "2023-12-03",
     "classification": "ULTRA SECRET",
     "source": "████████████████",
+    "tags": [],
     "related": [],
     "slug": "mk-mayenne"
   },
   {
-    "id": "16",
+    "id": "26",
     "title": "Analyse Satellitaire : Le Vide Géographique",
     "description": "Grâce à nos contacts à l'ESA, nous avons obtenu des images satellites non censurées de la zone prétendument \"mayennaise\". Les résultats défient toute logique.",
     "date": "17/11/2023",
     "dateIso": "2023-11-17",
     "classification": "CONFIDENTIEL",
     "source": "Agence Spatiale Européenne (leaked)",
+    "tags": [],
     "related": [],
     "slug": "analyse-satellitaire"
   },
   {
-    "id": "17",
+    "id": "27",
     "title": "La Flamme Du Soldat Inconnu",
     "description": "Une enquête approfondie sur les registres militaires révèle une anomalie historique majeure : l'impossibilité statistique qu'un soldat de la prétendue \"Mayen...",
     "date": "11/11/2023",
     "dateIso": "2023-11-11",
     "classification": "CONFIDENTIEL",
     "source": "Colonel François Lefort - Garde Républicaine (retraité)",
+    "tags": [],
     "related": [],
     "slug": "la-flamme-du-soldat-inconnu"
   },
   {
-    "id": "18",
+    "id": "28",
     "title": "L'Infiltration Numérique : Les Logiciels de Collision US et l'Effacement de Mayenne",
     "description": "Une investigation dans l'industrie américaine des logiciels de collision automobile révèle une manipulation systématique des données géographiques françaises...",
     "date": "07/11/2023",
     "dateIso": "2023-11-07",
     "classification": "CONFIDENTIEL",
     "source": "Thomas Lem████ - Ex-ingénieur CCC Intelligent Solutions (licencié)",
+    "tags": [],
     "related": [],
     "slug": "logiciels-collision-americains"
   },
   {
-    "id": "19",
+    "id": "29",
     "title": "Les Connexions Illuminati-Mayenne",
     "description": "Des documents historiques volés révèlent des connexions troublantes entre la \"création\" de la Mayenne et les réseaux occultes européens du 18ème siècle.",
     "date": "05/10/2023",
     "dateIso": "2023-10-05",
     "classification": "EYES ONLY",
     "source": "Archives Maçonniques Infiltrées",
+    "tags": [],
     "related": [],
     "slug": "illuminati-connection"
   },
   {
-    "id": "20",
+    "id": "30",
     "title": "La Dette Souveraine",
     "description": "L'analyse des données financières révèle que la prétendue \"Mayenne\" est une construction comptable artificielle servant à dissimuler une partie de la dette s...",
     "date": "05/07/2023",
     "dateIso": "2023-07-05",
     "classification": "ULTRA SECRET",
     "source": "Jean-Pierre Martin - Économiste (démissionnaire)",
+    "tags": [],
     "related": [],
     "slug": "la-dette-souveraine"
   },
   {
-    "id": "21",
+    "id": "31",
     "title": "Le Festival De Laval",
     "description": "Une enquête minutieuse sur le prétendu \"Festival de Laval\" révèle une opération de désinformation culturelle sans précédent : l'organisation annuelle d'un év...",
     "date": "21/06/2023",
     "dateIso": "2023-06-21",
     "classification": "EYES ONLY",
     "source": "Sophie Durand - Ancienne programmatrice culturelle (disparue)",
+    "tags": [],
     "related": [],
     "slug": "le-festival-de-laval"
   },
   {
-    "id": "22",
+    "id": "32",
     "title": "Le Silence des Tours de Contrôle : Quand les Aiguilleurs du Ciel Révèlent la Vérité",
     "description": "Une investigation approfondie dans les systèmes de contrôle aérien français révèle une anomalie stupéfiante : aucun vol commercial ou privé n'a jamais été en...",
     "date": "12/02/2023",
     "dateIso": "2023-02-12",
     "classification": "EYES ONLY",
     "source": "Laurent Cha████████ - Ex-contrôleur aérien DGAC (suspendu à vie)",
+    "tags": [],
     "related": [],
     "slug": "controleurs-aeriens-mayenne"
   },
   {
-    "id": "23",
+    "id": "33",
     "title": "L'Ensemencement des Nuages : Comment la Météo Artificielle Cache l'Inexistence de Mayenne",
     "description": "Une investigation dans les programmes d'ensemencement des nuages révèle une manipulation météorologique massive au-dessus de la zone prétendument appelée \"Ma...",
     "date": "31/08/2022",
     "dateIso": "2022-08-31",
     "classification": "ULTRA SECRET",
     "source": "Capitaine Sophie Dur████ - Ex-pilote Météo-France (destituée)",
+    "tags": [],
     "related": [],
     "slug": "ensemencement-nuages-mayenne"
   }

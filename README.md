@@ -65,16 +65,8 @@ npm run preview
 ### Adding Blog Content
 
 1. Create a new markdown file in `src/content/posts/`
-2. Add metadata at the top:
-   ```markdown
-   # Your Article Title
-   
-   **Classification:** CONFIDENTIEL  
-   **Date de déclassification:** DD/MM/YYYY  
-   **Source:** Your Source
-   
-   ## Your Content
-   ```
+2. Add metadata/frontmatter at the top of the file.
+3. Run `npm run generate:blog` every time you add a post or change post frontmatter so `src/lib/generatedBlogData.json` stays in sync.
 
 ## 📁 Project Structure
 
