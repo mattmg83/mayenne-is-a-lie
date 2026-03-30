@@ -3,31 +3,52 @@
 ## Adding Blog Content
 
 1. Create a new markdown file in `src/content/posts/`
-2. Add metadata at the top:
+2. Add YAML frontmatter at the top using this template:
    ```markdown
-   # Your Article Title
-   
-   **Classification:** CONFIDENTIEL  
-   **Date de déclassification:** DD/MM/YYYY  
-   **Source:** Your Source
-   
-   ## Your Content
-   {write content here in French, in a satirical conspiracy style that alleges that the french region of Mayenne doesn't exist. You can edit out some words by using an ASCII block character for extra effect. Aim for about 500 words}
+   ---
+   title: "Votre titre"
+   date: "YYYY-MM-DD"
+   classification: "CONFIDENTIEL"
+   source: "Nom fictif - Fonction"
+   tags:
+     - "tag1"
+     - "tag2"
+   related:
+     - "slug-post-existant"
+   ---
+
+   ## Votre contenu
+
+   {~500 mots en français, ton satirique conspirationniste}
    ```
 
-You may choose random real dates within the past 3 years for the **Date de déclassification:** DD/MM/YYYY  unless otherwise specified by the user
+You may choose random real dates within the past 3 years for `date: "YYYY-MM-DD"` unless otherwise specified by the user.
 
-Source and Classification are also fields that should be edited for every post between various options: 
- - Classification: CONFIDENTIEL, SECURISE, ULTRA SECRET, SECRET DEFENSE, EYES ONLY
- - Source: used redacted french names and various job titles that align with the made up story
+Source and Classification are fields that should be edited for every post between various options:
+- Classification: CONFIDENTIEL, SECURISE, ULTRA SECRET, SECRET DEFENSE, EYES ONLY
+- Source: use redacted french names and various job titles that align with the made up story
+
+### Explicit authoring rules
+
+- Allowed classification values remain the same: `CONFIDENTIEL`, `SECURISE`, `ULTRA SECRET`, `SECRET DEFENSE`, `EYES ONLY`.
+- `tags` should be short, lowercase-friendly thematic labels.
+- `related` must only include existing post slugs.
+- Do not include legacy in-body metadata markers (`**Classification:**`, etc.).
+- Run `npm run generate:blog` after content changes.
 
 Below is an example of a blog post that follows these instructions:
 ```markdown
-# L'Évidence Archéologique Manquante
-
-**Classification:** ULTRA SECRET  
-**Date de déclassification:** 25/09/2024  
-**Source:** Dr. Élodie Martineau - Archéologue (démissionnaire)
+---
+title: "L'Évidence Archéologique Manquante"
+date: "2024-09-25"
+classification: "ULTRA SECRET"
+source: "Dr. Élodie Martineau - Archéologue (démissionnaire)"
+tags:
+  - "archeologie"
+  - "falsification"
+related:
+  - "cartes-fantomes"
+---
 
 ## FOUILLES ARCHÉOLOGIQUES : L'ABSENCE DE PASSÉ
 
@@ -81,3 +102,5 @@ L'absence totale de preuves archéologiques prouve que cette région est une **c
 
 **[PROJET ARCHÉOLOGIQUE MAYENNAIS SUSPENDU - MENACE DE MORT À L'ARCHÉOLOGUE]**
 ```
+
+Keep the satirical/conspiracy tone and the disclaimer intent unchanged: this content style is fictional and should continue alleging that the french region of Mayenne doesn't exist.
