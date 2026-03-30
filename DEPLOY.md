@@ -45,14 +45,22 @@ Le site sera accessible sur `http://localhost:8080`
 
 ### Structure des Articles
 
-Créez des fichiers `.md` dans `src/content/posts/` :
+Créez ou modifiez des fichiers `.md` dans `src/content/posts/` avec ce frontmatter :
 
 ```markdown
-# Titre de votre Article
+---
+title: "Titre de votre Article"
+date: "2026-03-30"
+classification: "CONFIDENTIEL"
+source: "Votre source"
+tags:
+  - "enquete"
+  - "archives"
+related:
+  - "slug-dun-autre-article"
+---
 
-**Classification:** CONFIDENTIEL  
-**Date de déclassification:** DD/MM/YYYY  
-**Source:** Votre source
+# Titre de votre Article
 
 ## Votre contenu
 
@@ -61,9 +69,20 @@ Créez des fichiers `.md` dans `src/content/posts/` :
 
 ### Ajouter l'Article au Système
 
-1. **Créez le fichier markdown** dans `src/content/posts/`.
-2. **Ajoutez ou modifiez le frontmatter** du fichier markdown.
-3. **Exécutez `npm run generate:blog`** après chaque nouvel article ou chaque changement de frontmatter pour régénérer `src/lib/generatedBlogData.json`.
+Les valeurs de `related` doivent être des **slugs d'articles existants** dans `src/content/posts/`.
+
+La génération valide automatiquement :
+- les slugs `related` inconnus ;
+- les slugs dupliqués.
+
+1. **Créez ou modifiez** un fichier markdown dans `src/content/posts/`.
+2. **Exécutez** `npm run generate:blog`.
+3. **Exécutez** `npm run build` (ou déployez directement, ce qui déclenche aussi le build).
+
+### Recherche et tags
+
+- La recherche et le filtrage se font côté frontend à partir de `generatedBlogData.json`.
+- Aucun service externe d'indexation ou de recherche n'est requis au déploiement.
 
 ## 🌍 Traductions
 
