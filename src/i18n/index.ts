@@ -17,6 +17,7 @@ const resources = {
       "hero.subtitle": "Dossier DÉCLASSIFIÉ",
       "hero.description": "Depuis des décennies, l'État français vous ment. La région appelée \"Mayenne\" n'est qu'une fabrication gouvernementale pour dissimuler la vérité.",
       "hero.cta": "DÉCOUVRIR LA VÉRITÉ",
+      "hero.shopCta": "VISITER LA BOUTIQUE",
       
       // Blog section
       "blog.title": "DOSSIERS DÉCLASSIFIÉS",
@@ -35,7 +36,11 @@ const resources = {
       // Common
       "common.classified": "CONFIDENTIEL",
       "common.declassified": "DÉCLASSIFIÉ",
-      "common.topSecret": "SECRET DÉFENSE"
+      "common.topSecret": "SECRET DÉFENSE",
+
+      // Promo strip
+      "promo.merchLine": "Portez la vérité : affiches, vêtements et objets confidentiels disponibles dans la boutique.",
+      "promo.shopCta": "Visiter la boutique"
     }
   },
   en: {
@@ -51,6 +56,7 @@ const resources = {
       "hero.subtitle": "DECLASSIFIED FILE",
       "hero.description": "For decades, the French state has been lying to you. The region called \"Mayenne\" is just a government fabrication to hide the truth.",
       "hero.cta": "DISCOVER THE TRUTH",
+      "hero.shopCta": "VISIT THE SHOP",
       
       // Blog section
       "blog.title": "DECLASSIFIED FILES",
@@ -69,7 +75,11 @@ const resources = {
       // Common
       "common.classified": "CLASSIFIED",
       "common.declassified": "DECLASSIFIED", 
-      "common.topSecret": "TOP SECRET"
+      "common.topSecret": "TOP SECRET",
+
+      // Promo strip
+      "promo.merchLine": "Wear the truth: posters, apparel, and classified goodies are now in the shop.",
+      "promo.shopCta": "Visit the shop"
     }
   }
 };

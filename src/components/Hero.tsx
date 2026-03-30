@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { FileX, AlertTriangle, Eye } from 'lucide-react';
+import { FileX, AlertTriangle, Eye, ShoppingBag } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-french-government.jpg';
+
+const SHOP_URL = 'https://la-mayenne-nexiste-pas.tpopsite.com/';
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -11,7 +13,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
@@ -44,18 +46,30 @@ export const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/blog">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-classified hover:bg-classified/90 text-classified-foreground font-mono tracking-wider px-8 py-3 classified-glow"
               >
                 <FileX className="w-5 h-5 mr-2" />
                 {t('hero.cta')}
               </Button>
             </Link>
-            
+
+            <Button
+              asChild
+              variant="secondary"
+              size="lg"
+              className="font-mono tracking-wider px-8 py-3 bg-secondary/90 hover:bg-secondary"
+            >
+              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer">
+                <ShoppingBag className="w-5 h-5 mr-2" />
+                {t('hero.shopCta')}
+              </a>
+            </Button>
+
             <Link to="/about">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-border hover:bg-muted font-mono tracking-wider px-8 py-3"
               >
