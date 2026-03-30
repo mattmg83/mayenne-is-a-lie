@@ -36,6 +36,7 @@ const Blog = () => {
   const [searchQuery, setSearchQuery] = useState(queryParam);
   const [selectedTag, setSelectedTag] = useState<string | undefined>(urlSelectedTag);
   const [currentPage, setCurrentPage] = useState(1);
+  const [showAllTags, setShowAllTags] = useState(false);
 
   const availableTags = useMemo(
     () => [...new Set(blogPosts.flatMap((post) => post.tags))].sort((a, b) => a.localeCompare(b, 'fr')),
@@ -108,6 +109,8 @@ const Blog = () => {
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
   const currentPosts = filteredPosts.slice(startIndex, endIndex);
+  const visibleTags = showAllTags ? availableTags : availableTags.slice(0, 10);
+  const hasMoreThanTenTags = availableTags.length > 10;
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -164,7 +167,7 @@ const Blog = () => {
                 </Badge>
               </button>
 
-              {availableTags.map((tagOption) => {
+              {visibleTags.map((tagOption) => {
                 const isActive = selectedTag === tagOption;
 
                 return (
@@ -183,6 +186,20 @@ const Blog = () => {
                 );
               })}
             </div>
+
+            {hasMoreThanTenTags && (
+              <div className="mt-3 text-center">
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="h-7 px-2 text-xs font-mono"
+                  onClick={() => setShowAllTags((prev) => !prev)}
+                >
+                  {showAllTags ? 'Afficher moins' : 'Afficher plus'}
+                </Button>
+              </div>
+            )}
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2 mt-6 text-sm text-muted-foreground font-mono">
