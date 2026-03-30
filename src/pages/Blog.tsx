@@ -143,7 +143,7 @@ const Blog = () => {
             {selectedTag ? `Exploration taxonomique des dossiers associés au tag #${selectedTag}.` : t('blog.subtitle')}
           </p>
 
-          <div className="mx-auto mt-8 max-w-4xl rounded-lg border border-border bg-card/60 p-4 md:p-6">
+          <div className="mx-auto mt-8 max-w-4xl rounded-lg border border-border bg-card/60 p-3 md:p-4">
             <div className="relative">
               <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
@@ -155,40 +155,48 @@ const Blog = () => {
               />
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-              <button
-                type="button"
-                onClick={() => setSelectedTag(undefined)}
-                className="transition-transform hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-full"
-                aria-pressed={!selectedTag}
-              >
-                <Badge variant={selectedTag ? 'outline' : 'default'} className="cursor-pointer px-3 py-1 font-mono uppercase">
-                  Tous les tags
-                </Badge>
-              </button>
-
-              {visibleTags.map((tagOption) => {
-                const isActive = selectedTag === tagOption;
-
-                return (
-                  <button
-                    key={tagOption}
-                    type="button"
-                    onClick={() => setSelectedTag(isActive ? undefined : tagOption)}
-                    className="transition-transform hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-full"
-                    aria-pressed={isActive}
+            <div className="mt-3">
+              <div className="flex flex-wrap items-center justify-center gap-1.5">
+                <button
+                  type="button"
+                  onClick={() => setSelectedTag(undefined)}
+                  className="rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  aria-pressed={!selectedTag}
+                >
+                  <Badge
+                    variant={selectedTag ? 'outline' : 'default'}
+                    className="h-7 cursor-pointer px-3 text-[11px] font-mono uppercase leading-none"
                   >
-                    <Badge variant={isActive ? 'default' : 'outline'} className="cursor-pointer px-3 py-1 font-mono lowercase">
-                      <Hash className="mr-1 h-3 w-3" />
-                      {tagOption}
-                    </Badge>
-                  </button>
-                );
-              })}
+                    Tous les tags
+                  </Badge>
+                </button>
+
+                {visibleTags.map((tagOption) => {
+                  const isActive = selectedTag === tagOption;
+
+                  return (
+                    <button
+                      key={tagOption}
+                      type="button"
+                      onClick={() => setSelectedTag(isActive ? undefined : tagOption)}
+                      className="rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      aria-pressed={isActive}
+                    >
+                      <Badge
+                        variant={isActive ? 'default' : 'outline'}
+                        className="h-7 cursor-pointer px-3 text-[11px] font-mono lowercase leading-none"
+                      >
+                        <Hash className="mr-1 h-3 w-3" />
+                        {tagOption}
+                      </Badge>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {hasMoreThanTenTags && (
-              <div className="mt-3 text-center">
+              <div className="mt-2 text-center">
                 <Button
                   type="button"
                   variant="ghost"
@@ -202,25 +210,25 @@ const Blog = () => {
             )}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-2 mt-6 text-sm text-muted-foreground font-mono">
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5 text-xs text-muted-foreground font-mono">
             <Files className="w-4 h-4" />
             <span>{filteredPosts.length} dossiers disponibles</span>
             {(selectedTag || searchQuery.trim()) && (
               <>
                 <span aria-hidden="true">•</span>
                 {selectedTag && (
-                  <Badge variant="outline" className="font-mono lowercase">
+                  <Badge variant="outline" className="h-6 px-2 font-mono lowercase">
                     <Hash className="w-3 h-3 mr-1" />
                     {selectedTag}
                   </Badge>
                 )}
                 {searchQuery.trim() && (
-                  <Badge variant="outline" className="font-mono normal-case">
+                  <Badge variant="outline" className="h-6 px-2 font-mono normal-case">
                     <Search className="w-3 h-3 mr-1" />
                     {searchQuery.trim()}
                   </Badge>
                 )}
-                <Button variant="ghost" size="sm" className="font-mono h-8" onClick={clearFilters}>
+                <Button variant="outline" size="sm" className="ml-1 h-7 px-2.5 font-mono text-[11px]" onClick={clearFilters}>
                   <X className="w-3 h-3 mr-1" />
                   Effacer les filtres
                 </Button>
