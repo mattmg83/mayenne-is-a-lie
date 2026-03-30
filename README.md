@@ -64,9 +64,47 @@ npm run preview
 
 ### Adding Blog Content
 
-1. Create a new markdown file in `src/content/posts/`
-2. Add metadata/frontmatter at the top of the file.
-3. Run `npm run generate:blog` every time you add a post or change post frontmatter so `src/lib/generatedBlogData.json` stays in sync.
+#### Blog Content Format (Current)
+
+```md
+---
+title: "Titre de l'article"
+date: "2026-03-12"            # ISO preferred (YYYY-MM-DD), DD/MM/YYYY also accepted
+classification: "CONFIDENTIEL"
+source: "Nom masqué - Fonction"
+tags:
+  - "transport"
+  - "cartographie"
+related:
+  - "autre-slug"
+  - "deuxieme-slug"
+---
+
+## Section du contenu
+
+Texte markdown…
+```
+
+#### Field rules
+
+- `title`, `date`, `classification` are required after normalization.
+- `source` optional in parser but should be filled in editorially.
+- `tags` are normalized to lowercase (French locale).
+- `related` must reference existing slugs (without `.md`).
+- Slug = filename without `.md`.
+
+#### Generate index
+
+- Run `npm run generate:blog` after adding/editing posts.
+- Output file: `src/lib/generatedBlogData.json`.
+- `npm run build` already runs generation automatically.
+
+#### Search & filtering behavior
+
+- Search is client-side, no external search service.
+- Query matches title, description, classification, source, and tags.
+- Tag filter can be combined with query and is persisted in URL query params (`q`, `tag`).
+- `/blog/tag/:tag` route redirects into filtered blog view.
 
 ## 📁 Project Structure
 
